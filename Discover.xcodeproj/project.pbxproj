@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F861B07DAE9000D9911 /* AppDelegate.swift */; };
-		1F629F891B07DAE9000D9911 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F881B07DAE9000D9911 /* ViewController.swift */; };
 		1F629F8C1B07DAE9000D9911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8A1B07DAE9000D9911 /* Main.storyboard */; };
 		1F629F8E1B07DAE9000D9911 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8D1B07DAE9000D9911 /* Images.xcassets */; };
 		1F629F911B07DAE9000D9911 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8F1B07DAE9000D9911 /* LaunchScreen.xib */; };
 		1F629F9D1B07DAE9000D9911 /* DiscoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */; };
+		1F629FA71B0812D5000D9911 /* FoodPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		1F629F811B07DAE9000D9911 /* Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F629F851B07DAE9000D9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F629F861B07DAE9000D9911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F629F881B07DAE9000D9911 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F629F8B1B07DAE9000D9911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F629F8D1B07DAE9000D9911 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F629F901B07DAE9000D9911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1F629F961B07DAE9000D9911 /* DiscoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F629F9B1B07DAE9000D9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTests.swift; sourceTree = "<group>"; };
+		1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPreferencesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				1F629F861B07DAE9000D9911 /* AppDelegate.swift */,
-				1F629F881B07DAE9000D9911 /* ViewController.swift */,
+				1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */,
 				1F629F8A1B07DAE9000D9911 /* Main.storyboard */,
 				1F629F8D1B07DAE9000D9911 /* Images.xcassets */,
 				1F629F8F1B07DAE9000D9911 /* LaunchScreen.xib */,
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F629F891B07DAE9000D9911 /* ViewController.swift in Sources */,
+				1F629FA71B0812D5000D9911 /* FoodPreferencesViewController.swift in Sources */,
 				1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
