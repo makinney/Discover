@@ -13,6 +13,7 @@
 		1F629F911B07DAE9000D9911 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8F1B07DAE9000D9911 /* LaunchScreen.xib */; };
 		1F629F9D1B07DAE9000D9911 /* DiscoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */; };
 		1F629FA71B0812D5000D9911 /* FoodPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */; };
+		1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FAA1B08301F000D9911 /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		1F629F9B1B07DAE9000D9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTests.swift; sourceTree = "<group>"; };
 		1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPreferencesViewController.swift; sourceTree = "<group>"; };
+		1F629FAA1B08301F000D9911 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,12 @@
 		1F629F831B07DAE9000D9911 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				1F629FA81B082A1E000D9911 /* CustomControls */,
+				1F629FA91B082A31000D9911 /* ViewControllers */,
 				1F629F861B07DAE9000D9911 /* AppDelegate.swift */,
-				1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */,
-				1F629F8A1B07DAE9000D9911 /* Main.storyboard */,
 				1F629F8D1B07DAE9000D9911 /* Images.xcassets */,
 				1F629F8F1B07DAE9000D9911 /* LaunchScreen.xib */,
+				1F629F8A1B07DAE9000D9911 /* Main.storyboard */,
 				1F629F841B07DAE9000D9911 /* Supporting Files */,
 			);
 			path = Discover;
@@ -110,6 +113,22 @@
 				1F629F9B1B07DAE9000D9911 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F629FA81B082A1E000D9911 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				1F629FAA1B08301F000D9911 /* RoundButton.swift */,
+			);
+			name = CustomControls;
+			sourceTree = "<group>";
+		};
+		1F629FA91B082A31000D9911 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */,
 				1F629FA71B0812D5000D9911 /* FoodPreferencesViewController.swift in Sources */,
 				1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */,
 			);

@@ -29,17 +29,119 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvY-xs-tNc" userLabel="ButtonContainer">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W6-CX-6Bl" userLabel="GoButton" customClass="RoundButton" customModule="Discover" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="eG0-9Q-yN6"/>
+                                            <constraint firstAttribute="height" constant="60" id="mOM-31-FW7"/>
+                                        </constraints>
+                                        <state key="normal" image="MON_GO">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="eG0-9Q-yN6"/>
+                                                <exclude reference="mOM-31-FW7"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="eG0-9Q-yN6"/>
+                                                <include reference="mOM-31-FW7"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="goButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTa-Ys-n58"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD4-HQ-T8H" userLabel="RandomButton" customClass="RoundButton" customModule="Discover" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="MON_shuffleIcon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shuffleButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G0i-G7-EWT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="5W6-CX-6Bl" secondAttribute="centerY" id="1Yb-EU-yHY"/>
+                                    <constraint firstAttribute="trailing" secondItem="eD4-HQ-T8H" secondAttribute="trailing" constant="4" id="70z-Yp-skd"/>
+                                    <constraint firstItem="eD4-HQ-T8H" firstAttribute="height" secondItem="5W6-CX-6Bl" secondAttribute="height" id="AHD-4v-xh3"/>
+                                    <constraint firstAttribute="centerY" secondItem="eD4-HQ-T8H" secondAttribute="centerY" id="GPc-hW-rKV"/>
+                                    <constraint firstAttribute="width" constant="138" id="L6v-TK-UBW"/>
+                                    <constraint firstAttribute="height" constant="64" id="Zxd-4R-2lS"/>
+                                    <constraint firstItem="5W6-CX-6Bl" firstAttribute="leading" secondItem="kvY-xs-tNc" secondAttribute="leading" constant="4" id="ddu-tX-CWu"/>
+                                    <constraint firstItem="eD4-HQ-T8H" firstAttribute="width" secondItem="5W6-CX-6Bl" secondAttribute="width" id="qfm-EY-u0v"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="5W6-CX-6Bl"/>
+                                        <exclude reference="eD4-HQ-T8H"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="L6v-TK-UBW"/>
+                                        <exclude reference="Zxd-4R-2lS"/>
+                                        <exclude reference="1Yb-EU-yHY"/>
+                                        <exclude reference="ddu-tX-CWu"/>
+                                        <exclude reference="70z-Yp-skd"/>
+                                        <exclude reference="AHD-4v-xh3"/>
+                                        <exclude reference="GPc-hW-rKV"/>
+                                        <exclude reference="qfm-EY-u0v"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="5W6-CX-6Bl"/>
+                                        <include reference="eD4-HQ-T8H"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="L6v-TK-UBW"/>
+                                        <include reference="Zxd-4R-2lS"/>
+                                        <include reference="1Yb-EU-yHY"/>
+                                        <include reference="ddu-tX-CWu"/>
+                                        <include reference="70z-Yp-skd"/>
+                                        <include reference="AHD-4v-xh3"/>
+                                        <include reference="GPc-hW-rKV"/>
+                                        <include reference="qfm-EY-u0v"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerXWithinMargins" secondItem="cqQ-tA-x3o" secondAttribute="centerXWithinMargins" id="Gao-5P-lsE"/>
                             <constraint firstItem="PUa-0L-wsM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Leg-FH-Bg7"/>
                             <constraint firstItem="cqQ-tA-x3o" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Red-KP-lLr"/>
+                            <constraint firstAttribute="centerX" secondItem="kvY-xs-tNc" secondAttribute="centerX" id="Zuy-Rj-npK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kvY-xs-tNc" secondAttribute="bottom" constant="20" id="cUo-bA-Gbu"/>
                             <constraint firstAttribute="centerYWithinMargins" secondItem="cqQ-tA-x3o" secondAttribute="centerYWithinMargins" id="igR-9T-xCK"/>
                             <constraint firstItem="cqQ-tA-x3o" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="lc9-jI-xNb"/>
                             <constraint firstItem="PUa-0L-wsM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ssC-IS-8b8"/>
                             <constraint firstAttribute="trailing" secondItem="PUa-0L-wsM" secondAttribute="trailing" id="tx0-dU-LKQ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="kvY-xs-tNc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Zuy-Rj-npK"/>
+                                <exclude reference="cUo-bA-Gbu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="kvY-xs-tNc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Zuy-Rj-npK"/>
+                                <include reference="cUo-bA-Gbu"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="toolbar" destination="PUa-0L-wsM" id="uJn-Cl-yu4"/>
@@ -50,6 +152,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MON_GO" width="27" height="13"/>
         <image name="MON_Rectangle-5" width="320" height="568"/>
+        <image name="MON_shuffleIcon" width="26" height="16"/>
     </resources>
 </document>

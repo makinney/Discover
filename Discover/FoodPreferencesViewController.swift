@@ -12,6 +12,12 @@ class FoodPreferencesViewController: UIViewController {
 
 	@IBOutlet weak var toolbar: UIToolbar!
 	
+
+	@IBAction func goButtonTouched(sender: AnyObject) {
+	}
+	
+	@IBAction func shuffleButtonTouched(sender: AnyObject) {
+	}
     override func viewDidLoad() {
         super.viewDidLoad()
 		setupToolbar()
@@ -20,7 +26,6 @@ class FoodPreferencesViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-	
 	
 
     /*
