@@ -16,7 +16,7 @@ class ChoiceControlView: UIView {
 	@IBOutlet weak var circleView: CircleView!
 	@IBOutlet weak var usersChoice: UILabel!
 	
-	var displayedText: String {
+	var text: String {
 		get {
 			return usersChoice.text ?? String()
 		}
@@ -34,6 +34,8 @@ class ChoiceControlView: UIView {
 		}
 	}
 	
+	var controlTouched:(() -> ())?
+	
 	override func awakeFromNib() {
 		super.awakeFromNib()
 	}
@@ -49,6 +51,8 @@ class ChoiceControlView: UIView {
 		self.frame = view!.frame
 		setTranslatesAutoresizingMaskIntoConstraints(false)
 		self.addSubview(view!)
+		let tapRecognizer = UITapGestureRecognizer(target: self, action: "tapped")
+		self.addGestureRecognizer(tapRecognizer)
 	}
 
 	override func intrinsicContentSize() -> CGSize {
@@ -57,6 +61,10 @@ class ChoiceControlView: UIView {
 	
 	class func requiresContraintBasedLayout() -> Bool {
 		return true
+	}
+	
+	func tapped() {
+		controlTouched?()
 	}
 }
 

@@ -32,6 +32,16 @@ class ChoicesModel {
 		choiceController.dataSourceDelegate = ChoiceCategoryData(choiceCategory: choiceCategory)
 	}
 	
+	static var chosen = [ChoiceCategory:String]()
+
+	class func userChoices() -> [ChoiceCategory:String] {
+			return chosen
+	}
+	
+	class func saveUserChoices(choices: [ChoiceCategory:String]) {
+		chosen = choices
+	}
+	
 	class func choices(category: ChoiceCategory) -> [String] {
 		switch (category) {
 		case .Batch:

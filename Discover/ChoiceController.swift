@@ -19,26 +19,33 @@ class ChoiceController {
 		}
 	}
 	
-	var displayChoice: String {
+	var usersChoice: String {
 		get {
-			return choiceControlView.displayedText
+			return choiceControlView.text
 		}
 		set {
-			choiceControlView.displayedText = newValue
+			choiceControlView.text = newValue
+		}
+	}
+	
+	func choiceControlTouched() -> () {
+		if let nextChoice = self.nextChoice() {
+			self.usersChoice = nextChoice
 		}
 	}
 	
 	init(choiceControlView: ChoiceControlView) {
 		self.choiceControlView = choiceControlView
+		self.choiceControlView.controlTouched = choiceControlTouched
 	}
 		
 	private func load() {
 		if let dataSourceDelegate = dataSourceDelegate {
 			choices = dataSourceDelegate.choices
-			choicesIndexingGenerator = choices.generate()
 			choiceControlView.arcCount = choices.count
-			if let choice = choices.first {
-				displayChoice = choice
+			choicesIndexingGenerator = choices.generate()
+			if let choice = choicesIndexingGenerator?.next() {
+				usersChoice = choice // get the first one
 			}
 		}
 	}
@@ -53,7 +60,6 @@ class ChoiceController {
 		}
 	}
 
-
 	func reload() {
 		load()
 	}
@@ -61,6 +67,5 @@ class ChoiceController {
 	func shuffleChoices() {
 		
 	}
-	
 	
 }

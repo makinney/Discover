@@ -17,49 +17,56 @@ class FoodPreferencesViewController: UIViewController {
 	@IBOutlet weak var choiceControlViewD: ChoiceControlView!
 	@IBOutlet weak var choiceControlViewE: ChoiceControlView!
 	@IBOutlet weak var choiceControlViewF: ChoiceControlView!
-
-	var choiceControllers = [ChoiceController]()
 	
 	@IBAction func goButtonTouched(sender: AnyObject) {
+		saveUsersChoices(choiceControllers)
 	}
 	
 	@IBAction func shuffleButtonTouched(sender: AnyObject) {
 	}
 	
+	var choiceControllers = [ChoiceCategory: ChoiceController]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 		setupToolbar()
-		setupChoiceContollers()
+		choiceControllers = createChoiceControllers()
+		bindControllersToData(choiceControllers)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 	
-	func setupChoiceContollers() {
+	func bindControllersToData(controllers: [ChoiceCategory: ChoiceController]) {
+		for (category, controller) in controllers {
+			ChoicesModel.bindToData(controller, choiceCategory: category)
+		}
+	}
+	
+	func createChoiceControllers() -> [ChoiceCategory: ChoiceController] {
+		var controllers = [ChoiceCategory:ChoiceController]()
 		var choiceController = ChoiceController(choiceControlView: choiceControlViewA)
-		choiceControllers.append(choiceController)
-		ChoicesModel.bindToData(choiceController, choiceCategory: ChoiceCategory.Batch)
-		
+		controllers[ChoiceCategory.Batch] = choiceController
 		choiceController = ChoiceController(choiceControlView: choiceControlViewB)
-		choiceControllers.append(choiceController)
-		ChoicesModel.bindToData(choiceController, choiceCategory: ChoiceCategory.Sweet)
-		
+		controllers[ChoiceCategory.Sweet] = choiceController
 		choiceController = ChoiceController(choiceControlView: choiceControlViewC)
-		choiceControllers.append(choiceController)
-		ChoicesModel.bindToData(choiceController, choiceCategory: ChoiceCategory.Texture)
-		
+		controllers[ChoiceCategory.Texture] = choiceController
 		choiceController = ChoiceController(choiceControlView: choiceControlViewD)
-		choiceControllers.append(choiceController)
-		ChoicesModel.bindToData(choiceController, choiceCategory: ChoiceCategory.Spicy)
-		
+		controllers[ChoiceCategory.Spicy] = choiceController
 		choiceController = ChoiceController(choiceControlView: choiceControlViewE)
-		choiceControllers.append(choiceController)
-		ChoicesModel.bindToData(choiceController, choiceCategory: ChoiceCategory.Quantity)
-		
+		controllers[ChoiceCategory.Quantity] = choiceController
 		choiceController = ChoiceController(choiceControlView: choiceControlViewF)
-		choiceControllers.append(choiceController)
-		ChoicesModel.bindToData(choiceController, choiceCategory: ChoiceCategory.Meal)
+		controllers[ChoiceCategory.Meal] = choiceController
+		return controllers
+	}
+	
+	func saveUsersChoices(choiceControllers: [ChoiceCategory: ChoiceController]) {
+		var choiceForCategory = [ChoiceCategory: String]()
+		for (category, controller) in choiceControllers {
+			choiceForCategory[category] = controller.usersChoice
+		}
+		ChoicesModel.saveUserChoices(choiceForCategory)
 	}
 
     /*
