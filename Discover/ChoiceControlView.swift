@@ -33,12 +33,12 @@ class ChoiceControlView: UIView {
 		self.addSubview(view!)
 		
 		usersChoice.text = "SMALL BATCH"
-		self.arcView.arcCount = 2
+		self.arcView.arcCount = 4
 	
 	}
 
 	override func intrinsicContentSize() -> CGSize {
-		return CGSizeMake(143, 143)
+		return CGSizeMake(138, 138)
 	}
 	
 	class func requiresContraintBasedLayout() -> Bool {

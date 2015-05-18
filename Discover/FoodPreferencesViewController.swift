@@ -12,8 +12,15 @@ class FoodPreferencesViewController: UIViewController {
 
 	@IBOutlet weak var toolbar: UIToolbar!
 	
-	@IBOutlet weak var choiceViewA: UIView!
+	
+	@IBOutlet weak var choiceControlViewA: ChoiceControlView!
+	@IBOutlet weak var choiceControlViewB: ChoiceControlView!
+	@IBOutlet weak var choiceControlViewC: ChoiceControlView!
+	@IBOutlet weak var choiceControlViewD: ChoiceControlView!
+	@IBOutlet weak var choiceControlViewE: ChoiceControlView!
+	@IBOutlet weak var choiceControlViewF: ChoiceControlView!
 
+	
 	@IBAction func goButtonTouched(sender: AnyObject) {
 	}
 	
