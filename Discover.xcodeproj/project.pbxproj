@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1F1A58471B094B690016F53F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58461B094B690016F53F /* CircleView.swift */; };
 		1F1A58491B0963900016F53F /* ArcsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58481B0963900016F53F /* ArcsView.swift */; };
+		1F1A584B1B0A64550016F53F /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A584A1B0A64550016F53F /* ChoiceController.swift */; };
+		1F1A584D1B0A67160016F53F /* ChoiceControlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A584C1B0A67160016F53F /* ChoiceControlProtocol.swift */; };
+		1F1A58511B0A831C0016F53F /* ChoicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58501B0A831C0016F53F /* ChoicesModel.swift */; };
 		1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F861B07DAE9000D9911 /* AppDelegate.swift */; };
 		1F629F8C1B07DAE9000D9911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8A1B07DAE9000D9911 /* Main.storyboard */; };
 		1F629F8E1B07DAE9000D9911 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8D1B07DAE9000D9911 /* Images.xcassets */; };
@@ -33,6 +36,9 @@
 /* Begin PBXFileReference section */
 		1F1A58461B094B690016F53F /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		1F1A58481B0963900016F53F /* ArcsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcsView.swift; sourceTree = "<group>"; };
+		1F1A584A1B0A64550016F53F /* ChoiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceController.swift; sourceTree = "<group>"; };
+		1F1A584C1B0A67160016F53F /* ChoiceControlProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceControlProtocol.swift; sourceTree = "<group>"; };
+		1F1A58501B0A831C0016F53F /* ChoicesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoicesModel.swift; sourceTree = "<group>"; };
 		1F629F811B07DAE9000D9911 /* Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F629F851B07DAE9000D9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F629F861B07DAE9000D9911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,13 +72,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F1A58441B0855B80016F53F /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Data;
-			sourceTree = "<group>";
-		};
 		1F1A58451B0948A00016F53F /* ChoiceControlView */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +104,13 @@
 		1F629F831B07DAE9000D9911 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				1F1A58441B0855B80016F53F /* Data */,
-				1F629FA81B082A1E000D9911 /* CustomControls */,
-				1F629FA91B082A31000D9911 /* ViewControllers */,
+				1F1A58451B0948A00016F53F /* ChoiceControlView */,
 				1F629F861B07DAE9000D9911 /* AppDelegate.swift */,
+				1F1A584A1B0A64550016F53F /* ChoiceController.swift */,
+				1F1A584C1B0A67160016F53F /* ChoiceControlProtocol.swift */,
+				1F1A58501B0A831C0016F53F /* ChoicesModel.swift */,
+				1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */,
+				1F629FAA1B08301F000D9911 /* RoundButton.swift */,
 				1F629F8D1B07DAE9000D9911 /* Images.xcassets */,
 				1F629F8F1B07DAE9000D9911 /* LaunchScreen.xib */,
 				1F629F8A1B07DAE9000D9911 /* Main.storyboard */,
@@ -140,23 +142,6 @@
 				1F629F9B1B07DAE9000D9911 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1F629FA81B082A1E000D9911 /* CustomControls */ = {
-			isa = PBXGroup;
-			children = (
-				1F1A58451B0948A00016F53F /* ChoiceControlView */,
-				1F629FAA1B08301F000D9911 /* RoundButton.swift */,
-			);
-			name = CustomControls;
-			sourceTree = "<group>";
-		};
-		1F629FA91B082A31000D9911 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */,
-			);
-			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +245,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1A584B1B0A64550016F53F /* ChoiceController.swift in Sources */,
 				1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */,
+				1F1A58511B0A831C0016F53F /* ChoicesModel.swift in Sources */,
 				1F1A58491B0963900016F53F /* ArcsView.swift in Sources */,
 				1F1A58471B094B690016F53F /* CircleView.swift in Sources */,
+				1F1A584D1B0A67160016F53F /* ChoiceControlProtocol.swift in Sources */,
 				1F629FAF1B084045000D9911 /* ChoiceControlView.swift in Sources */,
 				1F629FA71B0812D5000D9911 /* FoodPreferencesViewController.swift in Sources */,
 				1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */,

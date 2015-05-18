@@ -12,7 +12,7 @@ import UIKit
 
 class CircleView: UIView {
 
-	@IBInspectable var fillColor: UIColor = UIColor.grayColor().colorWithAlphaComponent(0.6)
+	@IBInspectable var fillColor: UIColor = UIColor.grayColor().colorWithAlphaComponent(0.4)
 	
 	override func drawRect(rect: CGRect) {
 		var path = UIBezierPath(ovalInRect: rect)

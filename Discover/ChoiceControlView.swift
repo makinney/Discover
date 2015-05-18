@@ -16,6 +16,24 @@ class ChoiceControlView: UIView {
 	@IBOutlet weak var circleView: CircleView!
 	@IBOutlet weak var usersChoice: UILabel!
 	
+	var displayedText: String {
+		get {
+			return usersChoice.text ?? String()
+		}
+		set {
+			usersChoice.text = newValue
+		}
+	}
+	
+	var arcCount: Int {
+		get {
+			return arcView.arcCount
+		}
+		set {
+			arcView.arcCount = newValue
+		}
+	}
+	
 	override func awakeFromNib() {
 		super.awakeFromNib()
 	}
@@ -31,10 +49,6 @@ class ChoiceControlView: UIView {
 		self.frame = view!.frame
 		setTranslatesAutoresizingMaskIntoConstraints(false)
 		self.addSubview(view!)
-		
-		usersChoice.text = "SMALL BATCH"
-		self.arcView.arcCount = 4
-	
 	}
 
 	override func intrinsicContentSize() -> CGSize {

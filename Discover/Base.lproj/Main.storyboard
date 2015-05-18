@@ -30,7 +30,7 @@
                                 </items>
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvY-xs-tNc" userLabel="ButtonContainer">
-                                <rect key="frame" x="241" y="532" width="118" height="64"/>
+                                <rect key="frame" x="241" y="498" width="118" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W6-CX-6Bl" userLabel="GoButton" customClass="RoundButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="4" y="7" width="50" height="50"/>
@@ -218,7 +218,7 @@
                             <constraint firstAttribute="centerYWithinMargins" secondItem="cqQ-tA-x3o" secondAttribute="centerYWithinMargins" id="igR-9T-xCK"/>
                             <constraint firstItem="cqQ-tA-x3o" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="lc9-jI-xNb"/>
                             <constraint firstAttribute="centerX" secondItem="bCq-Ha-mdR" secondAttribute="centerX" id="mth-WL-qBc"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kvY-xs-tNc" secondAttribute="bottom" constant="4" id="q7i-8y-kTI"/>
+                            <constraint firstItem="kvY-xs-tNc" firstAttribute="top" secondItem="bCq-Ha-mdR" secondAttribute="bottom" constant="8" id="sC9-aS-tO3"/>
                             <constraint firstItem="PUa-0L-wsM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ssC-IS-8b8"/>
                             <constraint firstAttribute="trailing" secondItem="PUa-0L-wsM" secondAttribute="trailing" id="tx0-dU-LKQ"/>
                         </constraints>

@@ -46,6 +46,11 @@
                         <constraint firstItem="oG2-V4-6UU" firstAttribute="height" secondItem="0bg-bl-PFP" secondAttribute="height" constant="8" id="t4o-l5-ZOH"/>
                         <constraint firstAttribute="centerY" secondItem="PPb-ah-0Tz" secondAttribute="centerY" id="xS4-1Q-HFd"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="0.62" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
