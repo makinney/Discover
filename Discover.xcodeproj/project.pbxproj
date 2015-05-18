@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1A58471B094B690016F53F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58461B094B690016F53F /* CircleView.swift */; };
+		1F1A58491B0963900016F53F /* ArcsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58481B0963900016F53F /* ArcsView.swift */; };
 		1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F861B07DAE9000D9911 /* AppDelegate.swift */; };
 		1F629F8C1B07DAE9000D9911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8A1B07DAE9000D9911 /* Main.storyboard */; };
 		1F629F8E1B07DAE9000D9911 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8D1B07DAE9000D9911 /* Images.xcassets */; };
@@ -14,6 +16,8 @@
 		1F629F9D1B07DAE9000D9911 /* DiscoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */; };
 		1F629FA71B0812D5000D9911 /* FoodPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */; };
 		1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FAA1B08301F000D9911 /* RoundButton.swift */; };
+		1F629FAF1B084045000D9911 /* ChoiceControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FAE1B084045000D9911 /* ChoiceControlView.swift */; };
+		1F629FB11B0852A8000D9911 /* ChoiceControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F629FB01B0852A8000D9911 /* ChoiceControlView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F1A58461B094B690016F53F /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		1F1A58481B0963900016F53F /* ArcsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcsView.swift; sourceTree = "<group>"; };
 		1F629F811B07DAE9000D9911 /* Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F629F851B07DAE9000D9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F629F861B07DAE9000D9911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTests.swift; sourceTree = "<group>"; };
 		1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPreferencesViewController.swift; sourceTree = "<group>"; };
 		1F629FAA1B08301F000D9911 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		1F629FAE1B084045000D9911 /* ChoiceControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceControlView.swift; sourceTree = "<group>"; };
+		1F629FB01B0852A8000D9911 /* ChoiceControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoiceControlView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1A58441B0855B80016F53F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		1F1A58451B0948A00016F53F /* ChoiceControlView */ = {
+			isa = PBXGroup;
+			children = (
+				1F629FB01B0852A8000D9911 /* ChoiceControlView.xib */,
+				1F629FAE1B084045000D9911 /* ChoiceControlView.swift */,
+				1F1A58461B094B690016F53F /* CircleView.swift */,
+				1F1A58481B0963900016F53F /* ArcsView.swift */,
+			);
+			name = ChoiceControlView;
+			sourceTree = "<group>";
+		};
 		1F629F781B07DAE9000D9911 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +105,7 @@
 		1F629F831B07DAE9000D9911 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				1F1A58441B0855B80016F53F /* Data */,
 				1F629FA81B082A1E000D9911 /* CustomControls */,
 				1F629FA91B082A31000D9911 /* ViewControllers */,
 				1F629F861B07DAE9000D9911 /* AppDelegate.swift */,
@@ -118,6 +145,7 @@
 		1F629FA81B082A1E000D9911 /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				1F1A58451B0948A00016F53F /* ChoiceControlView */,
 				1F629FAA1B08301F000D9911 /* RoundButton.swift */,
 			);
 			name = CustomControls;
@@ -212,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F629F8C1B07DAE9000D9911 /* Main.storyboard in Resources */,
+				1F629FB11B0852A8000D9911 /* ChoiceControlView.xib in Resources */,
 				1F629F911B07DAE9000D9911 /* LaunchScreen.xib in Resources */,
 				1F629F8E1B07DAE9000D9911 /* Images.xcassets in Resources */,
 			);
@@ -232,6 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */,
+				1F1A58491B0963900016F53F /* ArcsView.swift in Sources */,
+				1F1A58471B094B690016F53F /* CircleView.swift in Sources */,
+				1F629FAF1B084045000D9911 /* ChoiceControlView.swift in Sources */,
 				1F629FA71B0812D5000D9911 /* FoodPreferencesViewController.swift in Sources */,
 				1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */,
 			);
@@ -431,6 +463,7 @@
 				1F629FA21B07DAE9000D9911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F629FA31B07DAE9000D9911 /* Build configuration list for PBXNativeTarget "DiscoverTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +472,7 @@
 				1F629FA51B07DAE9000D9911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,12 +12,14 @@ class FoodPreferencesViewController: UIViewController {
 
 	@IBOutlet weak var toolbar: UIToolbar!
 	
+	@IBOutlet weak var choiceViewA: UIView!
 
 	@IBAction func goButtonTouched(sender: AnyObject) {
 	}
 	
 	@IBAction func shuffleButtonTouched(sender: AnyObject) {
 	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 		setupToolbar()

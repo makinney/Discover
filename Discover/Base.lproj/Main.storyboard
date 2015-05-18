@@ -111,9 +111,31 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gi-FR-Eyr" userLabel="ChoiceViewA" customClass="ChoiceControlView" customModule="Discover" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="Ci9-fG-VIo"/>
+                                    <constraint firstAttribute="width" constant="143" id="Nlw-ie-TID"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ci9-fG-VIo"/>
+                                        <exclude reference="Nlw-ie-TID"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Ci9-fG-VIo"/>
+                                        <include reference="Nlw-ie-TID"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7gi-FR-Eyr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="5D1-FT-hmd"/>
+                            <constraint firstItem="7gi-FR-Eyr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="Cgw-P5-9Xz"/>
                             <constraint firstAttribute="centerXWithinMargins" secondItem="cqQ-tA-x3o" secondAttribute="centerXWithinMargins" id="Gao-5P-lsE"/>
                             <constraint firstItem="PUa-0L-wsM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Leg-FH-Bg7"/>
                             <constraint firstItem="cqQ-tA-x3o" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Red-KP-lLr"/>
@@ -127,8 +149,11 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="kvY-xs-tNc"/>
+                                <exclude reference="7gi-FR-Eyr"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="5D1-FT-hmd"/>
+                                <exclude reference="Cgw-P5-9Xz"/>
                                 <exclude reference="Zuy-Rj-npK"/>
                                 <exclude reference="cUo-bA-Gbu"/>
                             </mask>
@@ -136,14 +161,18 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="kvY-xs-tNc"/>
+                                <include reference="7gi-FR-Eyr"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="5D1-FT-hmd"/>
+                                <include reference="Cgw-P5-9Xz"/>
                                 <include reference="Zuy-Rj-npK"/>
                                 <include reference="cUo-bA-Gbu"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="choiceViewA" destination="7gi-FR-Eyr" id="Q13-2B-JTo"/>
                         <outlet property="toolbar" destination="PUa-0L-wsM" id="uJn-Cl-yu4"/>
                     </connections>
                 </viewController>
