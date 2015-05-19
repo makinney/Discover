@@ -12,6 +12,16 @@
 		1F1A584B1B0A64550016F53F /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A584A1B0A64550016F53F /* ChoiceController.swift */; };
 		1F1A584D1B0A67160016F53F /* ChoiceControlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A584C1B0A67160016F53F /* ChoiceControlProtocol.swift */; };
 		1F1A58511B0A831C0016F53F /* ChoicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58501B0A831C0016F53F /* ChoicesModel.swift */; };
+		1F1A58531B0ADDB80016F53F /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58521B0ADDB80016F53F /* EntryViewController.swift */; };
+		1F1A58581B0AE11B0016F53F /* FoodChoicesPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58571B0AE11B0016F53F /* FoodChoicesPresentationController.swift */; };
+		1F1A585A1B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58591B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift */; };
+		1F1A585C1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A585B1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift */; };
+		1F1A585E1B0AE3550016F53F /* FoodChoicesAnimatedTransistioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A585D1B0AE3550016F53F /* FoodChoicesAnimatedTransistioningDelegate.swift */; };
+		1F1A58601B0AE8900016F53F /* BlurredBackgroundPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A585F1B0AE8900016F53F /* BlurredBackgroundPresentationController.swift */; };
+		1F1A58621B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58611B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift */; };
+		1F1A58641B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58631B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift */; };
+		1F1A58661B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58651B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift */; };
+		1F1A58681B0AEB540016F53F /* YourChoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58671B0AEB540016F53F /* YourChoicesViewController.swift */; };
 		1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F861B07DAE9000D9911 /* AppDelegate.swift */; };
 		1F629F8C1B07DAE9000D9911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8A1B07DAE9000D9911 /* Main.storyboard */; };
 		1F629F8E1B07DAE9000D9911 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8D1B07DAE9000D9911 /* Images.xcassets */; };
@@ -39,6 +49,16 @@
 		1F1A584A1B0A64550016F53F /* ChoiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceController.swift; sourceTree = "<group>"; };
 		1F1A584C1B0A67160016F53F /* ChoiceControlProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceControlProtocol.swift; sourceTree = "<group>"; };
 		1F1A58501B0A831C0016F53F /* ChoicesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoicesModel.swift; sourceTree = "<group>"; };
+		1F1A58521B0ADDB80016F53F /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		1F1A58571B0AE11B0016F53F /* FoodChoicesPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoicesPresentationController.swift; sourceTree = "<group>"; };
+		1F1A58591B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoicesPresentAnimatedTransistion.swift; sourceTree = "<group>"; };
+		1F1A585B1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoicesDismissAnimatedTransistioning.swift; sourceTree = "<group>"; };
+		1F1A585D1B0AE3550016F53F /* FoodChoicesAnimatedTransistioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoicesAnimatedTransistioningDelegate.swift; sourceTree = "<group>"; };
+		1F1A585F1B0AE8900016F53F /* BlurredBackgroundPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredBackgroundPresentationController.swift; sourceTree = "<group>"; };
+		1F1A58611B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourChoicesPresentAnimatedTransistioning.swift; sourceTree = "<group>"; };
+		1F1A58631B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourChoicesDismissAnimatedTransistioning.swift; sourceTree = "<group>"; };
+		1F1A58651B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourChoicesAnimatedTransistioningDelegate.swift; sourceTree = "<group>"; };
+		1F1A58671B0AEB540016F53F /* YourChoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourChoicesViewController.swift; sourceTree = "<group>"; };
 		1F629F811B07DAE9000D9911 /* Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F629F851B07DAE9000D9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F629F861B07DAE9000D9911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +103,21 @@
 			name = ChoiceControlView;
 			sourceTree = "<group>";
 		};
+		1F1A58541B0ADF050016F53F /* Transistions */ = {
+			isa = PBXGroup;
+			children = (
+				1F1A585F1B0AE8900016F53F /* BlurredBackgroundPresentationController.swift */,
+				1F1A58571B0AE11B0016F53F /* FoodChoicesPresentationController.swift */,
+				1F1A585D1B0AE3550016F53F /* FoodChoicesAnimatedTransistioningDelegate.swift */,
+				1F1A58591B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift */,
+				1F1A585B1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift */,
+				1F1A58611B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift */,
+				1F1A58631B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift */,
+				1F1A58651B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift */,
+			);
+			name = Transistions;
+			sourceTree = "<group>";
+		};
 		1F629F781B07DAE9000D9911 = {
 			isa = PBXGroup;
 			children = (
@@ -104,13 +139,16 @@
 		1F629F831B07DAE9000D9911 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				1F1A58541B0ADF050016F53F /* Transistions */,
 				1F1A58451B0948A00016F53F /* ChoiceControlView */,
 				1F629F861B07DAE9000D9911 /* AppDelegate.swift */,
 				1F1A584A1B0A64550016F53F /* ChoiceController.swift */,
 				1F1A584C1B0A67160016F53F /* ChoiceControlProtocol.swift */,
 				1F1A58501B0A831C0016F53F /* ChoicesModel.swift */,
+				1F1A58521B0ADDB80016F53F /* EntryViewController.swift */,
 				1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */,
 				1F629FAA1B08301F000D9911 /* RoundButton.swift */,
+				1F1A58671B0AEB540016F53F /* YourChoicesViewController.swift */,
 				1F629F8D1B07DAE9000D9911 /* Images.xcassets */,
 				1F629F8F1B07DAE9000D9911 /* LaunchScreen.xib */,
 				1F629F8A1B07DAE9000D9911 /* Main.storyboard */,
@@ -245,13 +283,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1A585C1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift in Sources */,
+				1F1A58581B0AE11B0016F53F /* FoodChoicesPresentationController.swift in Sources */,
 				1F1A584B1B0A64550016F53F /* ChoiceController.swift in Sources */,
+				1F1A58531B0ADDB80016F53F /* EntryViewController.swift in Sources */,
 				1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */,
 				1F1A58511B0A831C0016F53F /* ChoicesModel.swift in Sources */,
+				1F1A58621B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift in Sources */,
 				1F1A58491B0963900016F53F /* ArcsView.swift in Sources */,
+				1F1A585A1B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift in Sources */,
+				1F1A58601B0AE8900016F53F /* BlurredBackgroundPresentationController.swift in Sources */,
 				1F1A58471B094B690016F53F /* CircleView.swift in Sources */,
+				1F1A58661B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift in Sources */,
 				1F1A584D1B0A67160016F53F /* ChoiceControlProtocol.swift in Sources */,
 				1F629FAF1B084045000D9911 /* ChoiceControlView.swift in Sources */,
+				1F1A58641B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift in Sources */,
+				1F1A58681B0AEB540016F53F /* YourChoicesViewController.swift in Sources */,
+				1F1A585E1B0AE3550016F53F /* FoodChoicesAnimatedTransistioningDelegate.swift in Sources */,
 				1F629FA71B0812D5000D9911 /* FoodPreferencesViewController.swift in Sources */,
 				1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */,
 			);

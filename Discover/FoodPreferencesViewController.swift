@@ -20,6 +20,7 @@ class FoodPreferencesViewController: UIViewController {
 	@IBOutlet weak var choiceViewF: ChoiceControlView!
 	
 	var choiceControllers = [ChoiceCategory: ChoiceController]()
+	let yourChoicesAnimatedTransistioningDelegate = YourChoicesAnimatedTransistioningDelegate()
 
 	// MARK: LifeCycle
 	
@@ -73,16 +74,15 @@ class FoodPreferencesViewController: UIViewController {
 		}
 	}
 	
-	/*
+	
 	// MARK: - Navigation
 	
-	// In a storyboard-based application, you will often want to do a little preparation before navigation
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-	// Get the new view controller using segue.destinationViewController.
-	// Pass the selected object to the new view controller.
+		var destinationViewController = segue.destinationViewController as! UIViewController
+		destinationViewController.transitioningDelegate = yourChoicesAnimatedTransistioningDelegate
+		destinationViewController.modalPresentationStyle = .Custom
 	}
-	*/
-	
+
 	
 	// MARK: Toolbar
 	

@@ -9,33 +9,7 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="135" width="441" height="42"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="42" id="V1C-7e-5bM"/>
-                        <constraint firstAttribute="width" constant="441" id="bBS-iv-ABx"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michael A Kinney" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewc-TU-Zmv">
-                    <rect key="frame" x="20" y="204" width="441" height="42"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
             <color key="backgroundColor" red="0.9137254901960784" green="0.82352941176470584" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
-            <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="height" secondItem="ewc-TU-Zmv" secondAttribute="height" id="75v-Q8-YI0"/>
-                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
-                <constraint firstAttribute="centerY" secondItem="kId-c2-rCX" secondAttribute="centerY" constant="84" id="iiS-TE-NNy"/>
-                <constraint firstItem="ewc-TU-Zmv" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="27" id="kGH-nj-hny"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="ewc-TU-Zmv" secondAttribute="leading" id="oso-68-RGW"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="width" secondItem="ewc-TU-Zmv" secondAttribute="width" id="ybT-7V-U63"/>
-            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
