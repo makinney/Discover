@@ -18,7 +18,7 @@ class ChoiceController {
 			load()
 		}
 	}
-	
+
 	var usersChoice: String {
 		get {
 			return choiceControlView.text
@@ -64,8 +64,39 @@ class ChoiceController {
 		load()
 	}
 	
+	// MARK: Shuffling
+	
+	var countdownTimer: NSTimer?
+	var countDownTimeMax: CUnsignedInt = 4
+	var countDownTimeMin: CUnsignedInt = 1
+	var updateTimer: NSTimer?
+	let updateTimerInterval = 0.5
+	
 	func shuffleChoices() {
-		
+		var randomCountdown = arc4random_uniform(countDownTimeMax - countDownTimeMin) + countDownTimeMin
+		var countdownTimer: NSTimeInterval = NSTimeInterval(randomCountdown)
+		startUpdateTimer()
+		startCountdownTimer(countdownTimer)
 	}
+	
+	func startCountdownTimer(timeout: NSTimeInterval) {
+		countdownTimer = NSTimer.scheduledTimerWithTimeInterval(timeout, target: self, selector: Selector("countdownTimerFired"), userInfo: nil, repeats: false)
+	}
+	
+	func startUpdateTimer() {
+		updateTimer = NSTimer.scheduledTimerWithTimeInterval(updateTimerInterval, target: self, selector: Selector("updateTimerFired"), userInfo: nil, repeats: true)
+	}
+	
+	@objc func updateTimerFired() {
+		if let choice = nextChoice() {
+			usersChoice = choice
+		}
+	}
+	
+	@objc func countdownTimerFired() {
+		updateTimer?.invalidate()
+		countdownTimer?.invalidate()
+	}
+	
 	
 }

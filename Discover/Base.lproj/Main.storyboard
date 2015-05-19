@@ -117,6 +117,13 @@
                                             <rect key="frame" x="3" y="148" width="143" height="143"/>
                                         </variation>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbT-Zn-Dw7" userLabel="ChoiceD" customClass="ChoiceControlView" customModule="Discover" customModuleProvider="target">
+                                        <rect key="frame" x="156" y="152" width="138" height="138"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="154" y="152" width="143" height="143"/>
+                                        </variation>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD4-5g-WNf" userLabel="ChoiceE" customClass="ChoiceControlView" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="6" y="300" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -129,13 +136,6 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="136" y="299" width="143" height="143"/>
-                                        </variation>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbT-Zn-Dw7" userLabel="ChoiceD" customClass="ChoiceControlView" customModule="Discover" customModuleProvider="target">
-                                        <rect key="frame" x="156" y="152" width="138" height="138"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="154" y="152" width="143" height="143"/>
                                         </variation>
                                     </view>
                                 </subviews>
@@ -175,9 +175,9 @@
                                         <include reference="7gi-FR-Eyr"/>
                                         <include reference="YC0-Vy-LSB"/>
                                         <include reference="fus-8k-daX"/>
+                                        <include reference="kbT-Zn-Dw7"/>
                                         <include reference="cD4-5g-WNf"/>
                                         <include reference="sxz-uU-4kG"/>
-                                        <include reference="kbT-Zn-Dw7"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="83D-Px-JXs"/>
@@ -230,12 +230,12 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="choiceControlViewA" destination="7gi-FR-Eyr" id="EeY-gQ-w94"/>
-                        <outlet property="choiceControlViewB" destination="YC0-Vy-LSB" id="tww-yi-Afi"/>
-                        <outlet property="choiceControlViewC" destination="fus-8k-daX" id="gpQ-Jb-C5k"/>
-                        <outlet property="choiceControlViewD" destination="kbT-Zn-Dw7" id="Y1I-zz-SkS"/>
-                        <outlet property="choiceControlViewE" destination="cD4-5g-WNf" id="Zba-pv-vU7"/>
-                        <outlet property="choiceControlViewF" destination="sxz-uU-4kG" id="cSo-Dq-YRw"/>
+                        <outlet property="choiceViewA" destination="7gi-FR-Eyr" id="Cb8-re-j7Q"/>
+                        <outlet property="choiceViewB" destination="YC0-Vy-LSB" id="XDw-9M-zvt"/>
+                        <outlet property="choiceViewC" destination="fus-8k-daX" id="vLy-VA-mOl"/>
+                        <outlet property="choiceViewD" destination="kbT-Zn-Dw7" id="kYm-Me-zGC"/>
+                        <outlet property="choiceViewE" destination="cD4-5g-WNf" id="taR-Lv-55C"/>
+                        <outlet property="choiceViewF" destination="sxz-uU-4kG" id="4ws-qV-PZY"/>
                         <outlet property="toolbar" destination="PUa-0L-wsM" id="uJn-Cl-yu4"/>
                     </connections>
                 </viewController>

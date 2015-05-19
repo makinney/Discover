@@ -11,22 +11,18 @@ import UIKit
 class FoodPreferencesViewController: UIViewController {
 
 	@IBOutlet weak var toolbar: UIToolbar!
-	@IBOutlet weak var choiceControlViewA: ChoiceControlView!
-	@IBOutlet weak var choiceControlViewB: ChoiceControlView!
-	@IBOutlet weak var choiceControlViewC: ChoiceControlView!
-	@IBOutlet weak var choiceControlViewD: ChoiceControlView!
-	@IBOutlet weak var choiceControlViewE: ChoiceControlView!
-	@IBOutlet weak var choiceControlViewF: ChoiceControlView!
 	
-	@IBAction func goButtonTouched(sender: AnyObject) {
-		saveUsersChoices(choiceControllers)
-	}
-	
-	@IBAction func shuffleButtonTouched(sender: AnyObject) {
-	}
+	@IBOutlet weak var choiceViewA: ChoiceControlView!
+	@IBOutlet weak var choiceViewB: ChoiceControlView!
+	@IBOutlet weak var choiceViewC: ChoiceControlView!
+	@IBOutlet weak var choiceViewD: ChoiceControlView!
+	@IBOutlet weak var choiceViewE: ChoiceControlView!
+	@IBOutlet weak var choiceViewF: ChoiceControlView!
 	
 	var choiceControllers = [ChoiceCategory: ChoiceController]()
 
+	// MARK: LifeCycle
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 		setupToolbar()
@@ -38,6 +34,8 @@ class FoodPreferencesViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 	
+	// MARK: Methods
+	
 	func bindControllersToData(controllers: [ChoiceCategory: ChoiceController]) {
 		for (category, controller) in controllers {
 			ChoicesModel.bindToData(controller, choiceCategory: category)
@@ -46,18 +44,12 @@ class FoodPreferencesViewController: UIViewController {
 	
 	func createChoiceControllers() -> [ChoiceCategory: ChoiceController] {
 		var controllers = [ChoiceCategory:ChoiceController]()
-		var choiceController = ChoiceController(choiceControlView: choiceControlViewA)
-		controllers[ChoiceCategory.Batch] = choiceController
-		choiceController = ChoiceController(choiceControlView: choiceControlViewB)
-		controllers[ChoiceCategory.Sweet] = choiceController
-		choiceController = ChoiceController(choiceControlView: choiceControlViewC)
-		controllers[ChoiceCategory.Texture] = choiceController
-		choiceController = ChoiceController(choiceControlView: choiceControlViewD)
-		controllers[ChoiceCategory.Spicy] = choiceController
-		choiceController = ChoiceController(choiceControlView: choiceControlViewE)
-		controllers[ChoiceCategory.Quantity] = choiceController
-		choiceController = ChoiceController(choiceControlView: choiceControlViewF)
-		controllers[ChoiceCategory.Meal] = choiceController
+		controllers[ChoiceCategory.Batch] = ChoiceController(choiceControlView: choiceViewA)
+		controllers[ChoiceCategory.Sweet] = ChoiceController(choiceControlView: choiceViewB)
+		controllers[ChoiceCategory.Texture] = ChoiceController(choiceControlView: choiceViewC)
+		controllers[ChoiceCategory.Spicy] = ChoiceController(choiceControlView: choiceViewD)
+		controllers[ChoiceCategory.Quantity] = ChoiceController(choiceControlView: choiceViewE)
+		controllers[ChoiceCategory.Meal] = ChoiceController(choiceControlView: choiceViewF)
 		return controllers
 	}
 	
@@ -68,18 +60,31 @@ class FoodPreferencesViewController: UIViewController {
 		}
 		ChoicesModel.saveUserChoices(choiceForCategory)
 	}
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 	
-	// MARK: Toolbar setup
+	// MARK: Button Actions
+	
+	@IBAction func goButtonTouched(sender: AnyObject) {
+		saveUsersChoices(choiceControllers)
+	}
+	
+	@IBAction func shuffleButtonTouched(sender: AnyObject) {
+		for (_, controller) in choiceControllers {
+			controller.shuffleChoices()
+		}
+	}
+	
+	/*
+	// MARK: - Navigation
+	
+	// In a storyboard-based application, you will often want to do a little preparation before navigation
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+	// Get the new view controller using segue.destinationViewController.
+	// Pass the selected object to the new view controller.
+	}
+	*/
+	
+	
+	// MARK: Toolbar
 	
 	func setupToolbar() {
 		let items = [searchButtonItem, fixedSpaceBarButtonItem, calendarButtonItem, fixedSpaceBarButtonItem, compassButtonItem, flexibleSpaceBarButtonItem, menuButtonItem]
