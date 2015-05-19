@@ -73,16 +73,18 @@ class ChoiceController {
 	
 	func shuffleChoices() {
 		var randomCountdown = arc4random_uniform(countDownTimeMax - countDownTimeMin) + countDownTimeMin
-		var countdownTimer: NSTimeInterval = NSTimeInterval(randomCountdown)
+		var countdownTime: NSTimeInterval = NSTimeInterval(randomCountdown)
 		startUpdateTimer()
-		startCountdownTimer(countdownTimer)
+		startCountdownTimer(countdownTime)
 	}
 	
 	func startCountdownTimer(timeout: NSTimeInterval) {
+		countdownTimer?.invalidate()
 		countdownTimer = NSTimer.scheduledTimerWithTimeInterval(timeout, target: self, selector: Selector("countdownTimerFired"), userInfo: nil, repeats: false)
 	}
 	
 	func startUpdateTimer() {
+		updateTimer?.invalidate()
 		updateTimer = NSTimer.scheduledTimerWithTimeInterval(updateTimerInterval, target: self, selector: Selector("updateTimerFired"), userInfo: nil, repeats: true)
 	}
 	
