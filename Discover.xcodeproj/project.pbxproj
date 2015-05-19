@@ -95,6 +95,8 @@
 		1F1A58451B0948A00016F53F /* ChoiceControlView */ = {
 			isa = PBXGroup;
 			children = (
+				1F1A584A1B0A64550016F53F /* ChoiceController.swift */,
+				1F1A584C1B0A67160016F53F /* ChoiceControlProtocol.swift */,
 				1F629FB01B0852A8000D9911 /* ChoiceControlView.xib */,
 				1F629FAE1B084045000D9911 /* ChoiceControlView.swift */,
 				1F1A58461B094B690016F53F /* CircleView.swift */,
@@ -142,8 +144,6 @@
 				1F1A58541B0ADF050016F53F /* Transistions */,
 				1F1A58451B0948A00016F53F /* ChoiceControlView */,
 				1F629F861B07DAE9000D9911 /* AppDelegate.swift */,
-				1F1A584A1B0A64550016F53F /* ChoiceController.swift */,
-				1F1A584C1B0A67160016F53F /* ChoiceControlProtocol.swift */,
 				1F1A58501B0A831C0016F53F /* ChoicesModel.swift */,
 				1F1A58521B0ADDB80016F53F /* EntryViewController.swift */,
 				1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */,

@@ -8,7 +8,7 @@
             <connections>
                 <outlet property="arcView" destination="oG2-V4-6UU" id="hJo-Rw-6Gj"/>
                 <outlet property="circleView" destination="0bg-bl-PFP" id="Csv-Je-FO5"/>
-                <outlet property="usersChoice" destination="PPb-ah-0Tz" id="cb6-H2-PPP"/>
+                <outlet property="textLabel" destination="PPb-ah-0Tz" id="e4t-qd-Krf"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -17,14 +17,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bg-bl-PFP" userLabel="circleView" customClass="CircleView" customModule="Discover" customModuleProvider="target">
-                    <rect key="frame" x="6" y="6" width="126" height="126"/>
+                    <rect key="frame" x="7" y="7" width="124" height="124"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oG2-V4-6UU" userLabel="arcView" customClass="ArcsView" customModule="Discover" customModuleProvider="target">
-                            <rect key="frame" x="-4" y="-4" width="134" height="134"/>
+                            <rect key="frame" x="-5" y="-5" width="134" height="134"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ONE OF A KIND" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPb-ah-0Tz" userLabel="choiceLabel">
-                            <rect key="frame" x="8" y="52" width="110" height="21"/>
+                            <rect key="frame" x="8" y="51" width="108" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="Pph-YT-bjg"/>
                             </constraints>
@@ -37,18 +37,18 @@
                     <constraints>
                         <constraint firstAttribute="centerX" secondItem="oG2-V4-6UU" secondAttribute="centerX" id="3xK-J5-1dB"/>
                         <constraint firstAttribute="trailing" secondItem="PPb-ah-0Tz" secondAttribute="trailing" constant="8" id="9vd-Pn-a2S"/>
-                        <constraint firstAttribute="width" constant="126" id="As0-X3-R5H"/>
-                        <constraint firstItem="oG2-V4-6UU" firstAttribute="width" secondItem="0bg-bl-PFP" secondAttribute="width" constant="8" id="Epl-2e-CEd"/>
-                        <constraint firstAttribute="height" constant="126" id="Km9-nN-TGC"/>
+                        <constraint firstAttribute="width" constant="124" id="As0-X3-R5H"/>
+                        <constraint firstItem="oG2-V4-6UU" firstAttribute="width" secondItem="0bg-bl-PFP" secondAttribute="width" constant="10" id="Epl-2e-CEd"/>
+                        <constraint firstAttribute="height" constant="124" id="Km9-nN-TGC"/>
                         <constraint firstItem="PPb-ah-0Tz" firstAttribute="leading" secondItem="0bg-bl-PFP" secondAttribute="leading" constant="8" id="Me5-qS-Bls"/>
                         <constraint firstAttribute="centerY" secondItem="oG2-V4-6UU" secondAttribute="centerY" id="aSf-eS-R1R"/>
                         <constraint firstAttribute="centerX" secondItem="PPb-ah-0Tz" secondAttribute="centerX" id="qt8-Sv-CuE"/>
-                        <constraint firstItem="oG2-V4-6UU" firstAttribute="height" secondItem="0bg-bl-PFP" secondAttribute="height" constant="8" id="t4o-l5-ZOH"/>
+                        <constraint firstItem="oG2-V4-6UU" firstAttribute="height" secondItem="0bg-bl-PFP" secondAttribute="height" constant="10" id="t4o-l5-ZOH"/>
                         <constraint firstAttribute="centerY" secondItem="PPb-ah-0Tz" secondAttribute="centerY" id="xS4-1Q-HFd"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                            <color key="value" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="0.62" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>

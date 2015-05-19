@@ -18,34 +18,30 @@ class ChoiceController {
 			load()
 		}
 	}
-
 	var usersChoice: String {
 		get {
 			return choiceControlView.text
 		}
-		set {
-			choiceControlView.text = newValue
-		}
 	}
-	
-	func choiceControlTouched() -> () {
-		if let nextChoice = self.nextChoice() {
-			self.usersChoice = nextChoice
-		}
-	}
-	
+		
 	init(choiceControlView: ChoiceControlView) {
 		self.choiceControlView = choiceControlView
 		self.choiceControlView.controlTouched = choiceControlTouched
 	}
-		
+	
+	func choiceControlTouched() -> () {
+		if let nextChoice = self.nextChoice() {
+			updateDisplayedChoice(nextChoice)
+		}
+	}
+	
 	private func load() {
 		if let dataSourceDelegate = dataSourceDelegate {
 			choices = dataSourceDelegate.choices
 			choiceControlView.arcCount = choices.count
 			choicesIndexingGenerator = choices.generate()
-			if let choice = choicesIndexingGenerator?.next() {
-				usersChoice = choice // get the first one
+			if let choice = choicesIndexingGenerator?.next() { // get the first one
+				updateDisplayedChoice(choice)
 			}
 		}
 	}
@@ -59,9 +55,12 @@ class ChoiceController {
 			return choicesIndexingGenerator?.next()
 		}
 	}
-
-	func reload() {
-		load()
+	
+	private func updateDisplayedChoice(choice: String) {
+		choiceControlView.text = choice
+		if let index = find(choices, choice) {
+			choiceControlView.arcSelectedIndex = index
+		}
 	}
 	
 	// MARK: Shuffling
@@ -89,7 +88,7 @@ class ChoiceController {
 	
 	@objc func updateTimerFired() {
 		if let choice = nextChoice() {
-			usersChoice = choice
+			updateDisplayedChoice(choice)
 		}
 	}
 	

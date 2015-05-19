@@ -14,14 +14,14 @@ class ChoiceControlView: UIView {
 	
 	@IBOutlet weak var arcView: ArcsView!
 	@IBOutlet weak var circleView: CircleView!
-	@IBOutlet weak var usersChoice: UILabel!
+	@IBOutlet weak var textLabel: UILabel!
 	
 	var text: String {
 		get {
-			return usersChoice.text ?? String()
+			return textLabel.text ?? String()
 		}
 		set {
-			usersChoice.text = newValue
+			textLabel.text = newValue
 		}
 	}
 	
@@ -31,6 +31,15 @@ class ChoiceControlView: UIView {
 		}
 		set {
 			arcView.arcCount = newValue
+		}
+	}
+	
+	var arcSelectedIndex: Int {
+		get {
+			return arcView.arcSelectedIndex
+		}
+		set {
+			arcView.arcSelectedIndex = newValue
 		}
 	}
 	
