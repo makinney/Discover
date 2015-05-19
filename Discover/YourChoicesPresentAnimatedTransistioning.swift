@@ -11,7 +11,7 @@ import UIKit
 class YourChoicesPresentAnimatedTransistioning: NSObject, UIViewControllerAnimatedTransitioning {
  
 	func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-		return 1.0
+		return 0.75
 	}
 	
 	func animateTransition(transitionContext: UIViewControllerContextTransitioning) {

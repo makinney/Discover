@@ -45,12 +45,12 @@ class FoodPreferencesViewController: UIViewController {
 	
 	func createChoiceControllers() -> [ChoiceCategory: ChoiceController] {
 		var controllers = [ChoiceCategory:ChoiceController]()
-		controllers[ChoiceCategory.Batch] = ChoiceController(choiceControlView: choiceViewA)
-		controllers[ChoiceCategory.Sweet] = ChoiceController(choiceControlView: choiceViewB)
-		controllers[ChoiceCategory.Texture] = ChoiceController(choiceControlView: choiceViewC)
-		controllers[ChoiceCategory.Spicy] = ChoiceController(choiceControlView: choiceViewD)
-		controllers[ChoiceCategory.Quantity] = ChoiceController(choiceControlView: choiceViewE)
-		controllers[ChoiceCategory.Meal] = ChoiceController(choiceControlView: choiceViewF)
+		controllers[.Batch] = ChoiceController(choiceControlView: choiceViewA)
+		controllers[.Sweet] = ChoiceController(choiceControlView: choiceViewB)
+		controllers[.Texture] = ChoiceController(choiceControlView: choiceViewC)
+		controllers[.Spicy] = ChoiceController(choiceControlView: choiceViewD)
+		controllers[.Quantity] = ChoiceController(choiceControlView: choiceViewE)
+		controllers[.Meal] = ChoiceController(choiceControlView: choiceViewF)
 		return controllers
 	}
 	

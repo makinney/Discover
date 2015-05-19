@@ -10,7 +10,7 @@ import UIKit
 
 class YourChoicesDismissAnimatedTransistioning: NSObject, UIViewControllerAnimatedTransitioning {
 	func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-		return 1.0 // TODO:
+		return 0.75 // TODO:
 	}
 	
 	func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
