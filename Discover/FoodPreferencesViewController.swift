@@ -83,6 +83,9 @@ class FoodPreferencesViewController: UIViewController {
 		destinationViewController.modalPresentationStyle = .Custom
 	}
 
+	func dismiss() {
+		dismissViewControllerAnimated(true, completion: nil)
+	}
 	
 	// MARK: Toolbar
 	
@@ -113,7 +116,7 @@ class FoodPreferencesViewController: UIViewController {
 	
 	var menuButtonItem: UIBarButtonItem {
 		var image = UIImage(named: "MON_menuIcon") ?? UIImage()
-		return UIBarButtonItem(image: image, style: .Plain, target: nil, action: "")
+		return UIBarButtonItem(image: image, style: .Plain, target: self, action: "dismiss")
 	}
 	
 	var searchButtonItem: UIBarButtonItem {

@@ -20,6 +20,9 @@ class YourChoicesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		prepViews()
+		let tapRecognizer = UITapGestureRecognizer(target: self, action: "dismiss")
+		self.view.addGestureRecognizer(tapRecognizer)
+
     }
 	
 	override func viewWillAppear(animated: Bool) {
@@ -55,6 +58,11 @@ class YourChoicesViewController: UIViewController {
 
     }
 	
+	
+	func dismiss() {
+		dismissViewControllerAnimated(true, completion: nil)
+	}
+
 
 	
 }

@@ -10,11 +10,17 @@ import UIKit
 
 class EntryViewController: UIViewController {
 
+	@IBOutlet weak var nameLabel: UILabel!
+	@IBOutlet weak var titleLabel: UILabel!
+	@IBOutlet weak var emailLabel: UILabel!
+	
 	let foodChoicesAnimatedTransistioningDelegate = FoodChoicesAnimatedTransistioningDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		
+		let tapRecognizer = UITapGestureRecognizer(target: self, action: "viewTapped:")
+		self.view.addGestureRecognizer(tapRecognizer)
 		
     }
 
@@ -25,10 +31,13 @@ class EntryViewController: UIViewController {
 	
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
-		   performSegueWithIdentifier("idSegueToDiscover", sender: self)
+		performSegueWithIdentifier("idSegueToDiscover", sender: self)
 	}
-    
-
+	
+	func viewTapped(tapRecognizer: UITapGestureRecognizer) {
+		performSegueWithIdentifier("idSegueToDiscover", sender: self)
+	}
+	
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

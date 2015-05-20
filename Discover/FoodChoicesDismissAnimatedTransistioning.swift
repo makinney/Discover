@@ -11,7 +11,7 @@ import UIKit
 class FoodChoicesDismissAnimatedTransistioning: NSObject, UIViewControllerAnimatedTransitioning {
 
 	func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-		return 0.25 // TODO:
+		return 0.50 // TODO:
 	}
 	
 	func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -25,13 +25,18 @@ class FoodChoicesDismissAnimatedTransistioning: NSObject, UIViewControllerAnimat
 		
 		var presentedTransform = CGAffineTransformIdentity
 		var scale = CGAffineTransformMakeScale(0.01,0.01) // TODO: shrink to this size value
-		var dismissedTransform = scale
+		let screenHeight = UIScreen.mainScreen().coordinateSpace.bounds.height ?? 600
+		let screenWidth = -UIScreen.mainScreen().coordinateSpace.bounds.width ?? 600
+
+		var xlat = CGAffineTransformMakeTranslation(0, screenHeight)
+		
+		var dismissedTransform = xlat
 		
 		animatingView.transform = presentedTransform
 		
 		UIView.animateWithDuration(transitionDuration(transitionContext),
 			delay: 0,
-			options: UIViewAnimationOptions.AllowUserInteraction | UIViewAnimationOptions.BeginFromCurrentState,
+			options: UIViewAnimationOptions.CurveEaseIn,
 			animations: { () -> Void in
 				animatingView.transform = dismissedTransform
 			}) { (finished) -> Void in
