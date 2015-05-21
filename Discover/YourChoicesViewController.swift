@@ -27,7 +27,7 @@ class YourChoicesViewController: UIViewController {
 	
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
-		var userChoices = ChoicesModel.userChoices()
+		var userChoices = MealPlanModel.userChoices()
 		viewA.text = userChoices[.Batch]
 		viewB.text = userChoices[.Sweet]
 		viewC.text = userChoices[.Texture]

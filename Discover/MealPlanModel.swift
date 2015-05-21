@@ -1,5 +1,5 @@
 //
-//  ChoicesModel.swift
+//  MealPlanModel.swift
 //  Discover
 //
 //  Created by Michael Kinney on 5/18/15.
@@ -21,12 +21,12 @@ struct ChoiceCategoryData: ChoiceControlProtocol {
 	var choiceCategory: ChoiceCategory
 	var choices: [String] {
 		get {
-			return ChoicesModel.choices(choiceCategory)
+			return MealPlanModel.choices(choiceCategory)
 		}
 	}
 }
 
-class ChoicesModel {
+class MealPlanModel {
 
 	class func bindToData(choiceController: ChoiceController, choiceCategory: ChoiceCategory) {
 		choiceController.dataSourceDelegate = ChoiceCategoryData(choiceCategory: choiceCategory)
@@ -38,8 +38,10 @@ class ChoicesModel {
 			return chosen
 	}
 	
-	class func saveUserChoices(choices: [ChoiceCategory:String]) {
-		chosen = choices
+	class func saveFoodChoice(foodCategories: [ChoiceCategory:String]) {
+		for (foodCategory, userChoice) in foodCategories {
+			chosen[foodCategory] = userChoice
+		}
 	}
 	
 	class func choices(category: ChoiceCategory) -> [String] {

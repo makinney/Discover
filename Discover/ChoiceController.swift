@@ -31,7 +31,7 @@ class ChoiceController {
 	
 	func choiceControlTouched() -> () {
 		if let nextChoice = self.nextChoice() {
-			updateDisplayedChoice(nextChoice)
+			updateViewDisplay(nextChoice)
 		}
 	}
 	
@@ -41,7 +41,7 @@ class ChoiceController {
 			choiceControlView.arcCount = choices.count
 			choicesIndexingGenerator = choices.generate()
 			if let choice = choicesIndexingGenerator?.next() { // get the first one
-				updateDisplayedChoice(choice)
+				updateViewDisplay(choice)
 			}
 		}
 	}
@@ -56,11 +56,15 @@ class ChoiceController {
 		}
 	}
 	
-	private func updateDisplayedChoice(choice: String) {
+	private func updateViewDisplay(choice: String) {
 		choiceControlView.text = choice
 		if let index = find(choices, choice) {
 			choiceControlView.arcSelectedIndex = index
 		}
+	}
+	
+	func save(foodchoice: String) {
+	// todo		MealPlanModel.saveFoodChoice
 	}
 	
 	// MARK: Shuffling
@@ -90,7 +94,7 @@ class ChoiceController {
 	
 	@objc func updateTimerFired() {
 		if let choice = nextChoice() {
-			updateDisplayedChoice(choice)
+			updateViewDisplay(choice)
 		}
 	}
 	

@@ -39,7 +39,7 @@ class FoodPreferencesViewController: UIViewController {
 	
 	func bindControllersToData(controllers: [ChoiceCategory: ChoiceController]) {
 		for (category, controller) in controllers {
-			ChoicesModel.bindToData(controller, choiceCategory: category)
+			MealPlanModel.bindToData(controller, choiceCategory: category)
 		}
 	}
 	
@@ -54,18 +54,9 @@ class FoodPreferencesViewController: UIViewController {
 		return controllers
 	}
 	
-	func saveUsersChoices(choiceControllers: [ChoiceCategory: ChoiceController]) {
-		var choiceForCategory = [ChoiceCategory: String]()
-		for (category, controller) in choiceControllers {
-			choiceForCategory[category] = controller.usersChoice
-		}
-		ChoicesModel.saveUserChoices(choiceForCategory)
-	}
-	
 	// MARK: Button Actions
 	
 	@IBAction func goButtonTouched(sender: AnyObject) {
-		saveUsersChoices(choiceControllers)
 	}
 	
 	@IBAction func shuffleButtonTouched(sender: AnyObject) {
