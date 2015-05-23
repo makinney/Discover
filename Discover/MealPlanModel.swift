@@ -2,13 +2,13 @@
 //  MealPlanModel.swift
 //  Discover
 //
-//  Created by Michael Kinney on 5/18/15.
+//  Created by Michael Kinney on 5/18/15.          
 //  Copyright (c) 2015 mkinney. All rights reserved.
 //
 
 import Foundation
 
-enum ChoiceCategory {
+enum MealDescriptionIngrediantType {
 	case Batch
 	case Sweet
 	case Spicy
@@ -17,35 +17,31 @@ enum ChoiceCategory {
 	case Meal
 }
 
-struct ChoiceCategoryData: ChoiceControlProtocol {
-	var choiceCategory: ChoiceCategory
+struct MealDescriptionIngrediant {
+	var mealDescriptionIngrediantType: MealDescriptionIngrediantType
 	var choices: [String] {
 		get {
-			return MealPlanModel.choices(choiceCategory)
+			return MealPlanModel.choices(mealDescriptionIngrediantType) // TODO: name and reverence back into class is kinda
 		}
 	}
 }
 
 class MealPlanModel {
 
-	class func bindToData(choiceController: ChoiceController, choiceCategory: ChoiceCategory) {
-		choiceController.dataSourceDelegate = ChoiceCategoryData(choiceCategory: choiceCategory)
-	}
-	
-	static var chosen = [ChoiceCategory:String]()
+	private static var ingrediantPresistence = [MealDescriptionIngrediantType:String]()
 
-	class func userChoices() -> [ChoiceCategory:String] {
-			return chosen
+	class func ingrediantDescription() -> [MealDescriptionIngrediantType:String] {
+			return ingrediantPresistence
 	}
 	
-	class func saveFoodChoice(foodCategories: [ChoiceCategory:String]) {
-		for (foodCategory, userChoice) in foodCategories {
-			chosen[foodCategory] = userChoice
+	class func saveIngrediants(ingrediants: [MealDescriptionIngrediantType:String]) {
+		for (ingrediantType, ingrediant) in ingrediants {
+			ingrediantPresistence[ingrediantType] = ingrediant
 		}
 	}
 	
-	class func choices(category: ChoiceCategory) -> [String] {
-		switch (category) {
+	class func choices(mealDescriptionIngrediantType: MealDescriptionIngrediantType) -> [String] {
+		switch (mealDescriptionIngrediantType) {
 		case .Batch:
 			return ["SMALL BATCH", "LARGE BATCH", "MASS MARKET", "ONE OF A KIND"]
 		case .Sweet:

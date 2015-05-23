@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F1A58471B094B690016F53F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58461B094B690016F53F /* CircleView.swift */; };
-		1F1A58491B0963900016F53F /* ArcsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58481B0963900016F53F /* ArcsView.swift */; };
-		1F1A584B1B0A64550016F53F /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A584A1B0A64550016F53F /* ChoiceController.swift */; };
-		1F1A584D1B0A67160016F53F /* ChoiceControlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A584C1B0A67160016F53F /* ChoiceControlProtocol.swift */; };
 		1F1A58511B0A831C0016F53F /* MealPlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58501B0A831C0016F53F /* MealPlanModel.swift */; };
 		1F1A58531B0ADDB80016F53F /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58521B0ADDB80016F53F /* EntryViewController.swift */; };
 		1F1A58581B0AE11B0016F53F /* FoodChoicesPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58571B0AE11B0016F53F /* FoodChoicesPresentationController.swift */; };
@@ -22,15 +18,16 @@
 		1F1A58641B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58631B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift */; };
 		1F1A58661B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58651B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift */; };
 		1F1A58681B0AEB540016F53F /* YourChoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58671B0AEB540016F53F /* YourChoicesViewController.swift */; };
+		1F3E354F1B10408C0057BC9F /* IngrediantButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E354E1B10408C0057BC9F /* IngrediantButton.xib */; };
+		1F3E35511B1041880057BC9F /* IngrediantButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E35501B1041880057BC9F /* IngrediantButton.swift */; };
+		1F3E35531B10FD260057BC9F /* ArcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E35521B10FD260057BC9F /* ArcModel.swift */; };
 		1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F861B07DAE9000D9911 /* AppDelegate.swift */; };
 		1F629F8C1B07DAE9000D9911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8A1B07DAE9000D9911 /* Main.storyboard */; };
 		1F629F8E1B07DAE9000D9911 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8D1B07DAE9000D9911 /* Images.xcassets */; };
 		1F629F911B07DAE9000D9911 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8F1B07DAE9000D9911 /* LaunchScreen.xib */; };
 		1F629F9D1B07DAE9000D9911 /* DiscoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */; };
-		1F629FA71B0812D5000D9911 /* FoodPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */; };
+		1F629FA71B0812D5000D9911 /* MealIngrediantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FA61B0812D5000D9911 /* MealIngrediantsViewController.swift */; };
 		1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FAA1B08301F000D9911 /* RoundButton.swift */; };
-		1F629FAF1B084045000D9911 /* ChoiceControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FAE1B084045000D9911 /* ChoiceControlView.swift */; };
-		1F629FB11B0852A8000D9911 /* ChoiceControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F629FB01B0852A8000D9911 /* ChoiceControlView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F1A58461B094B690016F53F /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		1F1A58481B0963900016F53F /* ArcsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcsView.swift; sourceTree = "<group>"; };
-		1F1A584A1B0A64550016F53F /* ChoiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ChoiceController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		1F1A584C1B0A67160016F53F /* ChoiceControlProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceControlProtocol.swift; sourceTree = "<group>"; };
 		1F1A58501B0A831C0016F53F /* MealPlanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MealPlanModel.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1F1A58521B0ADDB80016F53F /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		1F1A58571B0AE11B0016F53F /* FoodChoicesPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoicesPresentationController.swift; sourceTree = "<group>"; };
@@ -59,6 +52,9 @@
 		1F1A58631B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourChoicesDismissAnimatedTransistioning.swift; sourceTree = "<group>"; };
 		1F1A58651B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourChoicesAnimatedTransistioningDelegate.swift; sourceTree = "<group>"; };
 		1F1A58671B0AEB540016F53F /* YourChoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = YourChoicesViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1F3E354E1B10408C0057BC9F /* IngrediantButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngrediantButton.xib; sourceTree = "<group>"; };
+		1F3E35501B1041880057BC9F /* IngrediantButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngrediantButton.swift; sourceTree = "<group>"; };
+		1F3E35521B10FD260057BC9F /* ArcModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcModel.swift; sourceTree = "<group>"; };
 		1F629F811B07DAE9000D9911 /* Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F629F851B07DAE9000D9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F629F861B07DAE9000D9911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,10 +64,8 @@
 		1F629F961B07DAE9000D9911 /* DiscoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F629F9B1B07DAE9000D9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTests.swift; sourceTree = "<group>"; };
-		1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FoodPreferencesViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1F629FA61B0812D5000D9911 /* MealIngrediantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MealIngrediantsViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1F629FAA1B08301F000D9911 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		1F629FAE1B084045000D9911 /* ChoiceControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceControlView.swift; sourceTree = "<group>"; };
-		1F629FB01B0852A8000D9911 /* ChoiceControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoiceControlView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,19 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F1A58451B0948A00016F53F /* ChoiceControlView */ = {
-			isa = PBXGroup;
-			children = (
-				1F1A584A1B0A64550016F53F /* ChoiceController.swift */,
-				1F1A584C1B0A67160016F53F /* ChoiceControlProtocol.swift */,
-				1F629FB01B0852A8000D9911 /* ChoiceControlView.xib */,
-				1F629FAE1B084045000D9911 /* ChoiceControlView.swift */,
-				1F1A58461B094B690016F53F /* CircleView.swift */,
-				1F1A58481B0963900016F53F /* ArcsView.swift */,
-			);
-			name = ChoiceControlView;
-			sourceTree = "<group>";
-		};
 		1F1A58541B0ADF050016F53F /* Transistions */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,11 +123,13 @@
 			isa = PBXGroup;
 			children = (
 				1F1A58541B0ADF050016F53F /* Transistions */,
-				1F1A58451B0948A00016F53F /* ChoiceControlView */,
 				1F629F861B07DAE9000D9911 /* AppDelegate.swift */,
-				1F1A58501B0A831C0016F53F /* MealPlanModel.swift */,
+				1F3E35521B10FD260057BC9F /* ArcModel.swift */,
 				1F1A58521B0ADDB80016F53F /* EntryViewController.swift */,
-				1F629FA61B0812D5000D9911 /* FoodPreferencesViewController.swift */,
+				1F3E354E1B10408C0057BC9F /* IngrediantButton.xib */,
+				1F3E35501B1041880057BC9F /* IngrediantButton.swift */,
+				1F1A58501B0A831C0016F53F /* MealPlanModel.swift */,
+				1F629FA61B0812D5000D9911 /* MealIngrediantsViewController.swift */,
 				1F629FAA1B08301F000D9911 /* RoundButton.swift */,
 				1F1A58671B0AEB540016F53F /* YourChoicesViewController.swift */,
 				1F629F8D1B07DAE9000D9911 /* Images.xcassets */,
@@ -263,8 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F629F8C1B07DAE9000D9911 /* Main.storyboard in Resources */,
-				1F629FB11B0852A8000D9911 /* ChoiceControlView.xib in Resources */,
 				1F629F911B07DAE9000D9911 /* LaunchScreen.xib in Resources */,
+				1F3E354F1B10408C0057BC9F /* IngrediantButton.xib in Resources */,
 				1F629F8E1B07DAE9000D9911 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,22 +268,19 @@
 			files = (
 				1F1A585C1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift in Sources */,
 				1F1A58581B0AE11B0016F53F /* FoodChoicesPresentationController.swift in Sources */,
-				1F1A584B1B0A64550016F53F /* ChoiceController.swift in Sources */,
 				1F1A58531B0ADDB80016F53F /* EntryViewController.swift in Sources */,
 				1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */,
 				1F1A58511B0A831C0016F53F /* MealPlanModel.swift in Sources */,
 				1F1A58621B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift in Sources */,
-				1F1A58491B0963900016F53F /* ArcsView.swift in Sources */,
+				1F3E35511B1041880057BC9F /* IngrediantButton.swift in Sources */,
 				1F1A585A1B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift in Sources */,
 				1F1A58601B0AE8900016F53F /* BlurredBackgroundPresentationController.swift in Sources */,
-				1F1A58471B094B690016F53F /* CircleView.swift in Sources */,
+				1F3E35531B10FD260057BC9F /* ArcModel.swift in Sources */,
 				1F1A58661B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift in Sources */,
-				1F1A584D1B0A67160016F53F /* ChoiceControlProtocol.swift in Sources */,
-				1F629FAF1B084045000D9911 /* ChoiceControlView.swift in Sources */,
 				1F1A58641B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift in Sources */,
 				1F1A58681B0AEB540016F53F /* YourChoicesViewController.swift in Sources */,
 				1F1A585E1B0AE3550016F53F /* FoodChoicesAnimatedTransistioningDelegate.swift in Sources */,
-				1F629FA71B0812D5000D9911 /* FoodPreferencesViewController.swift in Sources */,
+				1F629FA71B0812D5000D9911 /* MealIngrediantsViewController.swift in Sources */,
 				1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

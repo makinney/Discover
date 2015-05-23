@@ -11,7 +11,7 @@ import UIKit
 class FoodChoicesPresentAnimatedTransistion: NSObject, UIViewControllerAnimatedTransitioning {
 
 	func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-		return 0.75 // TODO:
+		return 0.50 // TODO:
 	}
 	
 	func animateTransition(transitionContext: UIViewControllerContextTransitioning) {

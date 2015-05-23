@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="152" y="577"/>
         </scene>
-        <!--Food Preferences View Controller-->
+        <!--Meal Ingrediants View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FoodPreferencesViewController" customModule="Discover" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MealIngrediantsViewController" customModule="Discover" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -153,7 +153,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCq-Ha-mdR" userLabel="ChoicesContainer">
                                 <rect key="frame" x="150" y="65" width="300" height="425"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gi-FR-Eyr" userLabel="ChoiceA" customClass="ChoiceControlView" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gi-FR-Eyr" userLabel="ChoiceA" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="6" y="4" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -167,32 +167,32 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YC0-Vy-LSB" userLabel="ChoiceB" customClass="ChoiceControlView" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YC0-Vy-LSB" userLabel="ChoiceB" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="156" y="4" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fus-8k-daX" userLabel="ChoiceC" customClass="ChoiceControlView" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fus-8k-daX" userLabel="ChoiceC" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="6" y="152" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="3" y="148" width="143" height="143"/>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbT-Zn-Dw7" userLabel="ChoiceD" customClass="ChoiceControlView" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbT-Zn-Dw7" userLabel="ChoiceD" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="156" y="152" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="154" y="152" width="143" height="143"/>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD4-5g-WNf" userLabel="ChoiceE" customClass="ChoiceControlView" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD4-5g-WNf" userLabel="ChoiceE" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="6" y="300" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="4" y="282" width="143" height="143"/>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxz-uU-4kG" userLabel="ChoiceF" customClass="ChoiceControlView" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxz-uU-4kG" userLabel="ChoiceF" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="156" y="300" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
@@ -292,12 +292,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="PDw-w7-yb6"/>
                     <connections>
-                        <outlet property="choiceViewA" destination="7gi-FR-Eyr" id="Cb8-re-j7Q"/>
-                        <outlet property="choiceViewB" destination="YC0-Vy-LSB" id="XDw-9M-zvt"/>
-                        <outlet property="choiceViewC" destination="fus-8k-daX" id="vLy-VA-mOl"/>
-                        <outlet property="choiceViewD" destination="kbT-Zn-Dw7" id="kYm-Me-zGC"/>
-                        <outlet property="choiceViewE" destination="cD4-5g-WNf" id="taR-Lv-55C"/>
-                        <outlet property="choiceViewF" destination="sxz-uU-4kG" id="4ws-qV-PZY"/>
+                        <outlet property="ingrediantButtonA" destination="7gi-FR-Eyr" id="GI4-BR-v2J"/>
+                        <outlet property="ingrediantButtonB" destination="YC0-Vy-LSB" id="YFj-Qk-fFs"/>
+                        <outlet property="ingrediantButtonC" destination="fus-8k-daX" id="hIK-FS-ALd"/>
+                        <outlet property="ingrediantButtonD" destination="kbT-Zn-Dw7" id="jAi-Qp-xuw"/>
+                        <outlet property="ingrediantButtonE" destination="cD4-5g-WNf" id="D1j-aB-10T"/>
+                        <outlet property="ingrediantButtonF" destination="sxz-uU-4kG" id="a7e-d1-DXb"/>
                         <outlet property="toolbar" destination="PUa-0L-wsM" id="uJn-Cl-yu4"/>
                     </connections>
                 </viewController>

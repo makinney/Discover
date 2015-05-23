@@ -1,5 +1,5 @@
 //
-//  FoodPreferencesViewController.swift
+//  MealIngrediantsViewController.swift
 //  Discover
 //
 //  Created by Michael Kinney on 5/16/15.
@@ -8,18 +8,17 @@
 
 import UIKit
 
-class FoodPreferencesViewController: UIViewController {
+class MealIngrediantsViewController: UIViewController {
 
+	@IBOutlet weak var ingrediantButtonA: IngrediantButton!
+	@IBOutlet weak var ingrediantButtonB: IngrediantButton!
+	@IBOutlet weak var ingrediantButtonC: IngrediantButton!
+	@IBOutlet weak var ingrediantButtonD: IngrediantButton!
+	@IBOutlet weak var ingrediantButtonE: IngrediantButton!
+	@IBOutlet weak var ingrediantButtonF: IngrediantButton!
+	
 	@IBOutlet weak var toolbar: UIToolbar!
 	
-	@IBOutlet weak var choiceViewA: ChoiceControlView!
-	@IBOutlet weak var choiceViewB: ChoiceControlView!
-	@IBOutlet weak var choiceViewC: ChoiceControlView!
-	@IBOutlet weak var choiceViewD: ChoiceControlView!
-	@IBOutlet weak var choiceViewE: ChoiceControlView!
-	@IBOutlet weak var choiceViewF: ChoiceControlView!
-	
-	var choiceControllers = [ChoiceCategory: ChoiceController]()
 	let yourChoicesAnimatedTransistioningDelegate = YourChoicesAnimatedTransistioningDelegate()
 
 	// MARK: LifeCycle
@@ -27,44 +26,42 @@ class FoodPreferencesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		setupToolbar()
-		choiceControllers = createChoiceControllers()
-		bindControllersToData(choiceControllers)
-    }
+	}
+	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		bindData()
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 	
-	// MARK: Methods
+	// MARK: Setup
 	
-	func bindControllersToData(controllers: [ChoiceCategory: ChoiceController]) {
-		for (category, controller) in controllers {
-			MealPlanModel.bindToData(controller, choiceCategory: category)
-		}
+	func bindData() {
+		ingrediantButtonA.mealDescriptionIngrediantType = .Batch
+		ingrediantButtonB.mealDescriptionIngrediantType = .Sweet
+		ingrediantButtonC.mealDescriptionIngrediantType = .Texture
+		ingrediantButtonD.mealDescriptionIngrediantType = .Spicy
+		ingrediantButtonE.mealDescriptionIngrediantType = .Quantity
+		ingrediantButtonF.mealDescriptionIngrediantType = .Meal
 	}
 	
-	func createChoiceControllers() -> [ChoiceCategory: ChoiceController] {
-		var controllers = [ChoiceCategory:ChoiceController]()
-		controllers[.Batch] = ChoiceController(choiceControlView: choiceViewA)
-		controllers[.Sweet] = ChoiceController(choiceControlView: choiceViewB)
-		controllers[.Texture] = ChoiceController(choiceControlView: choiceViewC)
-		controllers[.Spicy] = ChoiceController(choiceControlView: choiceViewD)
-		controllers[.Quantity] = ChoiceController(choiceControlView: choiceViewE)
-		controllers[.Meal] = ChoiceController(choiceControlView: choiceViewF)
-		return controllers
-	}
-	
-	// MARK: Button Actions
+	// MARK: Button actions
 	
 	@IBAction func goButtonTouched(sender: AnyObject) {
+	
 	}
 	
 	@IBAction func shuffleButtonTouched(sender: AnyObject) {
-		for (_, controller) in choiceControllers {
-			controller.shuffleChoices()
-		}
+		ingrediantButtonA.shuffleChoices()
+		ingrediantButtonB.shuffleChoices()
+		ingrediantButtonC.shuffleChoices()
+		ingrediantButtonD.shuffleChoices()
+		ingrediantButtonE.shuffleChoices()
+		ingrediantButtonF.shuffleChoices()
 	}
-	
 	
 	// MARK: - Navigation
 	

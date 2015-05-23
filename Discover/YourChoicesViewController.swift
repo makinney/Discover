@@ -27,13 +27,13 @@ class YourChoicesViewController: UIViewController {
 	
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
-		var userChoices = MealPlanModel.userChoices()
-		viewA.text = userChoices[.Batch]
-		viewB.text = userChoices[.Sweet]
-		viewC.text = userChoices[.Texture]
-		viewD.text = userChoices[.Spicy]
-		viewE.text = userChoices[.Quantity]
-		viewF.text = userChoices[.Meal]
+		var customersMealDescriptions = MealPlanModel.ingrediantDescription()
+		viewA.text = customersMealDescriptions[.Batch]
+		viewB.text = customersMealDescriptions[.Sweet]
+		viewC.text = customersMealDescriptions[.Texture]
+		viewD.text = customersMealDescriptions[.Spicy]
+		viewE.text = customersMealDescriptions[.Quantity]
+		viewF.text = customersMealDescriptions[.Meal]
 	}
 	
 	func prepViews() {
