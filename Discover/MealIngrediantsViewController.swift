@@ -39,15 +39,24 @@ class MealIngrediantsViewController: UIViewController {
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
 		prepareButtons(ButtonAttributes())
-		prepareIngrediantSelectionMediators()
+		createIngrediantSelectionMediators()
 	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 	
-	// MARK: Preparation
-
+	// MARK: setup
+	
+	func createIngrediantSelectionMediators() {
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonA, mealDescriptionIngrediantType: .Batch))
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonB, mealDescriptionIngrediantType: .Sweet))
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonC, mealDescriptionIngrediantType: .Texture))
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonD, mealDescriptionIngrediantType: .Spicy))
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonE, mealDescriptionIngrediantType: .Quantity))
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonF, mealDescriptionIngrediantType: .Meal))
+	}
+	
 	func prepareButtons(buttonAttributes: ButtonAttributes) {
 		prepareButton(ingrediantButtonA, buttonAttributes: buttonAttributes)
 		prepareButton(ingrediantButtonB, buttonAttributes: buttonAttributes)
@@ -63,17 +72,9 @@ class MealIngrediantsViewController: UIViewController {
 		ingrediantbutton.setTitleColor(buttonAttributes.normalTextColor, forState: .Normal)
 		ingrediantbutton.setTitleColor(buttonAttributes.highlightedTextColor, forState: .Highlighted)
 	}
+
 	
-	func prepareIngrediantSelectionMediators() {
-		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonA, mealDescriptionIngrediantType: .Batch))
-		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonB, mealDescriptionIngrediantType: .Sweet))
-		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonC, mealDescriptionIngrediantType: .Texture))
-		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonD, mealDescriptionIngrediantType: .Spicy))
-		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonE, mealDescriptionIngrediantType: .Quantity))
-		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonF, mealDescriptionIngrediantType: .Meal))
-	}
-	
-	// MARK: General Methods
+	// MARK: Methods
 	
 	func findIngrediantSelectionMediator(ingrediantSelectionMediators: [IngrediantSelectionMediator], forIngrediantButton: IngrediantButton) -> IngrediantSelectionMediator? {
 		var mediators = ingrediantSelectionMediators.filter() {

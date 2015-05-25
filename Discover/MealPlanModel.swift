@@ -21,7 +21,7 @@ struct MealDescriptionIngrediant {
 	var mealDescriptionIngrediantType: MealDescriptionIngrediantType
 	var choices: [String] {
 		get {
-			return MealPlanModel.choices(mealDescriptionIngrediantType) // TODO: name and reverence back into class is kinda
+			return MealPlanModel.ingrediants(mealDescriptionIngrediantType) // TODO: name and reverence back into class is kinda
 		}
 	}
 }
@@ -40,7 +40,7 @@ class MealPlanModel {
 		}
 	}
 	
-	class func choices(mealDescriptionIngrediantType: MealDescriptionIngrediantType) -> [String] {
+	class func ingrediants(mealDescriptionIngrediantType: MealDescriptionIngrediantType) -> [String] {
 		switch (mealDescriptionIngrediantType) {
 		case .Batch:
 			return ["SMALL BATCH", "LARGE BATCH", "MASS MARKET", "ONE OF A KIND"]

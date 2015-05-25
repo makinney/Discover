@@ -46,9 +46,9 @@ class IngrediantSelectionMediator{
 	}
 	
 	func nextIngrediant() -> String? {
-		var choice: String?
-		if let choice = ingrediantsIndexingGenerator?.next() {
-			return choice
+		var ingrediant: String?
+		if let ingrediant = ingrediantsIndexingGenerator?.next() {
+			return ingrediant
 		} else {
 			ingrediantsIndexingGenerator = ingrediants.generate()
 			return ingrediantsIndexingGenerator?.next()
