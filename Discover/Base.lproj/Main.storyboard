@@ -19,37 +19,34 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michael A Kinney" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7n-62-tZQ">
                                 <rect key="frame" x="80" y="279" width="441" height="42"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Gre-O7-PHm">
-                                <rect key="frame" x="80" y="229" width="441" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TetCompany@comcast.net" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhp-D8-REd">
+                                <rect key="frame" x="80" y="325" width="441" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gre-O7-PHm">
+                                <rect key="frame" x="80" y="233" width="441" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="pWv-Jd-n7U"/>
                                     <constraint firstAttribute="width" constant="441" id="vzP-KH-dca"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TetCompany@Comcast.net" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhp-D8-REd">
-                                <rect key="frame" x="80" y="329" width="441" height="42"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.75686274509803919" green="0.58823529411764708" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Dhp-D8-REd" firstAttribute="height" secondItem="z7n-62-tZQ" secondAttribute="height" id="1tK-fv-tvY"/>
                             <constraint firstItem="Dhp-D8-REd" firstAttribute="width" secondItem="z7n-62-tZQ" secondAttribute="width" id="BCL-of-QF9"/>
                             <constraint firstItem="Gre-O7-PHm" firstAttribute="leading" secondItem="z7n-62-tZQ" secondAttribute="leading" id="EB8-Av-ImZ"/>
                             <constraint firstItem="Dhp-D8-REd" firstAttribute="leading" secondItem="z7n-62-tZQ" secondAttribute="leading" id="Gst-Qx-CyJ"/>
-                            <constraint firstItem="Dhp-D8-REd" firstAttribute="top" secondItem="z7n-62-tZQ" secondAttribute="bottom" constant="8" id="cie-1A-4ho"/>
+                            <constraint firstItem="Dhp-D8-REd" firstAttribute="top" secondItem="z7n-62-tZQ" secondAttribute="bottom" constant="4" id="cie-1A-4ho"/>
                             <constraint firstAttribute="centerX" secondItem="z7n-62-tZQ" secondAttribute="centerX" id="icz-J3-j4R"/>
                             <constraint firstItem="Gre-O7-PHm" firstAttribute="width" secondItem="z7n-62-tZQ" secondAttribute="width" id="kur-xN-ywv"/>
-                            <constraint firstItem="z7n-62-tZQ" firstAttribute="top" secondItem="Gre-O7-PHm" secondAttribute="bottom" constant="8" id="tfq-I6-R9R"/>
+                            <constraint firstItem="z7n-62-tZQ" firstAttribute="top" secondItem="Gre-O7-PHm" secondAttribute="bottom" constant="4" id="tfq-I6-R9R"/>
                             <constraint firstItem="Gre-O7-PHm" firstAttribute="height" secondItem="z7n-62-tZQ" secondAttribute="height" id="tvt-GC-LJe"/>
                             <constraint firstAttribute="centerY" secondItem="z7n-62-tZQ" secondAttribute="centerY" id="uMu-CF-V8f"/>
                         </constraints>
@@ -166,10 +163,18 @@
                                                 <include reference="Nlw-ie-TID"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="kNb-Ta-PRb"/>
+                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pv5-nP-oki"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YC0-Vy-LSB" userLabel="ChoiceB" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="156" y="4" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="0Dd-8Q-u23"/>
+                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGR-Cx-tq3"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fus-8k-daX" userLabel="ChoiceC" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="6" y="152" width="138" height="138"/>
@@ -177,6 +182,10 @@
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="3" y="148" width="143" height="143"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="8Rq-kV-ByT"/>
+                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOx-gU-HNZ"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbT-Zn-Dw7" userLabel="ChoiceD" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="156" y="152" width="138" height="138"/>
@@ -184,6 +193,10 @@
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="154" y="152" width="143" height="143"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="9Qf-hy-i1q"/>
+                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVS-ee-vJG"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD4-5g-WNf" userLabel="ChoiceE" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="6" y="300" width="138" height="138"/>
@@ -191,6 +204,10 @@
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="4" y="282" width="143" height="143"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Wik-Kh-Jtf"/>
+                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAk-U5-Qiv"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxz-uU-4kG" userLabel="ChoiceF" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="156" y="300" width="138" height="138"/>
@@ -198,6 +215,10 @@
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="136" y="299" width="143" height="143"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="uuC-pq-URf"/>
+                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWn-fa-bwY"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -317,16 +338,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Choices" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSj-Qj-4Fm">
-                                <rect key="frame" x="184" y="225" width="224" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="3f2-XC-W4N"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MM3-xd-ZDR">
                                 <rect key="frame" x="184" y="250" width="224" height="100"/>
                                 <subviews>
@@ -405,6 +416,16 @@
                                     <constraint firstItem="M7U-xX-1yt" firstAttribute="height" secondItem="KWZ-ei-c5T" secondAttribute="height" id="z1F-yU-JoZ"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediants" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSj-Qj-4Fm">
+                                <rect key="frame" x="184" y="225" width="224" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3f2-XC-W4N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>

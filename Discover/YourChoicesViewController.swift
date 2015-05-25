@@ -16,7 +16,7 @@ class YourChoicesViewController: UIViewController {
 	@IBOutlet weak var viewD: UILabel!
 	@IBOutlet weak var viewE: UILabel!
 	@IBOutlet weak var viewF: UILabel!
-	
+
     override func viewDidLoad() {
         super.viewDidLoad()
 		prepViews()
@@ -37,25 +37,23 @@ class YourChoicesViewController: UIViewController {
 	}
 	
 	func prepViews() {
-	    let borderColor = UIColor.grayColor().CGColor
-		let borderWidth: CGFloat = 1.0
-		viewA.layer.borderColor = borderColor
-		viewA.layer.borderWidth = borderWidth
-		viewB.layer.borderColor = borderColor
-		viewB.layer.borderWidth = borderWidth
-		viewC.layer.borderColor = borderColor
-		viewC.layer.borderWidth = borderWidth
-		viewD.layer.borderColor = borderColor
-		viewD.layer.borderWidth = borderWidth
-		viewE.layer.borderColor = borderColor
-		viewE.layer.borderWidth = borderWidth
-		viewF.layer.borderColor = borderColor
-		viewF.layer.borderWidth = borderWidth
+		prepLabel(viewA)
+		prepLabel(viewB)
+		prepLabel(viewC)
+		prepLabel(viewD)
+		prepLabel(viewE)
+		prepLabel(viewF)
+	}
+	
+	func prepLabel(label: UILabel) {
+		label.textColor = UIColor.discoverOrange()
+		label.backgroundColor = UIColor.ingrediantTextBackground()
+		label.layer.borderColor = UIColor.grayColor().CGColor
+		label.layer.borderWidth = CGFloat(1.0)
 	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
     }
 	
 	

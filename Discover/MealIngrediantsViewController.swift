@@ -19,8 +19,16 @@ class MealIngrediantsViewController: UIViewController {
 	
 	@IBOutlet weak var toolbar: UIToolbar!
 	
+	var ingrediantSelectionMediators = [IngrediantSelectionMediator]()
 	let yourChoicesAnimatedTransistioningDelegate = YourChoicesAnimatedTransistioningDelegate()
-
+	
+	struct ButtonAttributes {
+		let defaultArcColor = UIColor.blackColor()
+		let selectedArcColor = UIColor.discoverOrange()
+		let normalTextColor = UIColor.discoverOrange()
+		let highlightedTextColor = UIColor.blackColor()
+	}
+	
 	// MARK: LifeCycle
 	
     override func viewDidLoad() {
@@ -30,40 +38,77 @@ class MealIngrediantsViewController: UIViewController {
 	
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
-		bindData()
+		prepareButtons(ButtonAttributes())
+		prepareIngrediantSelectionMediators()
 	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 	
-	// MARK: Setup
+	// MARK: Preparation
+
+	func prepareButtons(buttonAttributes: ButtonAttributes) {
+		prepareButton(ingrediantButtonA, buttonAttributes: buttonAttributes)
+		prepareButton(ingrediantButtonB, buttonAttributes: buttonAttributes)
+		prepareButton(ingrediantButtonC, buttonAttributes: buttonAttributes)
+		prepareButton(ingrediantButtonD, buttonAttributes: buttonAttributes)
+		prepareButton(ingrediantButtonE, buttonAttributes: buttonAttributes)
+		prepareButton(ingrediantButtonF, buttonAttributes: buttonAttributes)
+	}
 	
-	func bindData() {
-		ingrediantButtonA.mealDescriptionIngrediantType = .Batch
-		ingrediantButtonB.mealDescriptionIngrediantType = .Sweet
-		ingrediantButtonC.mealDescriptionIngrediantType = .Texture
-		ingrediantButtonD.mealDescriptionIngrediantType = .Spicy
-		ingrediantButtonE.mealDescriptionIngrediantType = .Quantity
-		ingrediantButtonF.mealDescriptionIngrediantType = .Meal
+	func prepareButton(ingrediantbutton: IngrediantButton, buttonAttributes: ButtonAttributes) {
+		ingrediantbutton.defaultArcColor = buttonAttributes.defaultArcColor
+		ingrediantbutton.selectedArcColor = buttonAttributes.selectedArcColor
+		ingrediantbutton.setTitleColor(buttonAttributes.normalTextColor, forState: .Normal)
+		ingrediantbutton.setTitleColor(buttonAttributes.highlightedTextColor, forState: .Highlighted)
+	}
+	
+	func prepareIngrediantSelectionMediators() {
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonA, mealDescriptionIngrediantType: .Batch))
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonB, mealDescriptionIngrediantType: .Sweet))
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonC, mealDescriptionIngrediantType: .Texture))
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonD, mealDescriptionIngrediantType: .Spicy))
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonE, mealDescriptionIngrediantType: .Quantity))
+		ingrediantSelectionMediators.append(IngrediantSelectionMediator(ingrediantButton: ingrediantButtonF, mealDescriptionIngrediantType: .Meal))
+	}
+	
+	// MARK: General Methods
+	
+	func findIngrediantSelectionMediator(ingrediantSelectionMediators: [IngrediantSelectionMediator], forIngrediantButton: IngrediantButton) -> IngrediantSelectionMediator? {
+		var mediators = ingrediantSelectionMediators.filter() {
+			$0.ingrediantButton == forIngrediantButton
+		}
+		return mediators.first
 	}
 	
 	// MARK: Button actions
 	
-	@IBAction func goButtonTouched(sender: AnyObject) {
+	@IBAction func ingrediantButtonTouchUpInside(sender: IngrediantButton) {
+		if let mediator = findIngrediantSelectionMediator(ingrediantSelectionMediators, forIngrediantButton: sender) {
+			mediator.changeDisplayedIngrediant()
+		}
+	}
 	
+	@IBAction func ingrediantButtonTouchDown(sender: IngrediantButton) {
+		if let mediator = findIngrediantSelectionMediator(ingrediantSelectionMediators, forIngrediantButton: sender) {
+			mediator.allButtonArcsNormalColor()
+		}
+	}
+	
+	@IBAction func goButtonTouched(sender: AnyObject) {
+		for ingrediantSelectionMediator in ingrediantSelectionMediators {
+			ingrediantSelectionMediator.save()
+		}
 	}
 	
 	@IBAction func shuffleButtonTouched(sender: AnyObject) {
-		ingrediantButtonA.shuffleChoices()
-		ingrediantButtonB.shuffleChoices()
-		ingrediantButtonC.shuffleChoices()
-		ingrediantButtonD.shuffleChoices()
-		ingrediantButtonE.shuffleChoices()
-		ingrediantButtonF.shuffleChoices()
+		for ingrediantSelectionMediator in ingrediantSelectionMediators {
+			ingrediantSelectionMediator.shuffleIngrediants()
+		}
 	}
 	
-	// MARK: - Navigation
+	// MARK: Navigation
 	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		var destinationViewController = segue.destinationViewController as! UIViewController
@@ -71,7 +116,7 @@ class MealIngrediantsViewController: UIViewController {
 		destinationViewController.modalPresentationStyle = .Custom
 	}
 
-	func dismiss() {
+	func dismiss() { // just for demo purposes
 		dismissViewControllerAnimated(true, completion: nil)
 	}
 	

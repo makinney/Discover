@@ -21,6 +21,7 @@
 		1F3E354F1B10408C0057BC9F /* IngrediantButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E354E1B10408C0057BC9F /* IngrediantButton.xib */; };
 		1F3E35511B1041880057BC9F /* IngrediantButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E35501B1041880057BC9F /* IngrediantButton.swift */; };
 		1F3E35531B10FD260057BC9F /* ArcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E35521B10FD260057BC9F /* ArcModel.swift */; };
+		1F3E35551B1398880057BC9F /* IngrediantSelectionMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E35541B1398880057BC9F /* IngrediantSelectionMediator.swift */; };
 		1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F861B07DAE9000D9911 /* AppDelegate.swift */; };
 		1F629F8C1B07DAE9000D9911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8A1B07DAE9000D9911 /* Main.storyboard */; };
 		1F629F8E1B07DAE9000D9911 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8D1B07DAE9000D9911 /* Images.xcassets */; };
@@ -28,6 +29,7 @@
 		1F629F9D1B07DAE9000D9911 /* DiscoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */; };
 		1F629FA71B0812D5000D9911 /* MealIngrediantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FA61B0812D5000D9911 /* MealIngrediantsViewController.swift */; };
 		1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FAA1B08301F000D9911 /* RoundButton.swift */; };
+		1F79CB2C1B13C06C004B6595 /* DiscoverColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79CB2B1B13C06C004B6595 /* DiscoverColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		1F3E354E1B10408C0057BC9F /* IngrediantButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngrediantButton.xib; sourceTree = "<group>"; };
 		1F3E35501B1041880057BC9F /* IngrediantButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngrediantButton.swift; sourceTree = "<group>"; };
 		1F3E35521B10FD260057BC9F /* ArcModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcModel.swift; sourceTree = "<group>"; };
+		1F3E35541B1398880057BC9F /* IngrediantSelectionMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngrediantSelectionMediator.swift; sourceTree = "<group>"; };
 		1F629F811B07DAE9000D9911 /* Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F629F851B07DAE9000D9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F629F861B07DAE9000D9911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTests.swift; sourceTree = "<group>"; };
 		1F629FA61B0812D5000D9911 /* MealIngrediantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MealIngrediantsViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1F629FAA1B08301F000D9911 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		1F79CB2B1B13C06C004B6595 /* DiscoverColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +129,11 @@
 				1F1A58541B0ADF050016F53F /* Transistions */,
 				1F629F861B07DAE9000D9911 /* AppDelegate.swift */,
 				1F3E35521B10FD260057BC9F /* ArcModel.swift */,
+				1F79CB2B1B13C06C004B6595 /* DiscoverColors.swift */,
 				1F1A58521B0ADDB80016F53F /* EntryViewController.swift */,
 				1F3E354E1B10408C0057BC9F /* IngrediantButton.xib */,
 				1F3E35501B1041880057BC9F /* IngrediantButton.swift */,
+				1F3E35541B1398880057BC9F /* IngrediantSelectionMediator.swift */,
 				1F1A58501B0A831C0016F53F /* MealPlanModel.swift */,
 				1F629FA61B0812D5000D9911 /* MealIngrediantsViewController.swift */,
 				1F629FAA1B08301F000D9911 /* RoundButton.swift */,
@@ -269,8 +275,10 @@
 				1F1A585C1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift in Sources */,
 				1F1A58581B0AE11B0016F53F /* FoodChoicesPresentationController.swift in Sources */,
 				1F1A58531B0ADDB80016F53F /* EntryViewController.swift in Sources */,
+				1F3E35551B1398880057BC9F /* IngrediantSelectionMediator.swift in Sources */,
 				1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */,
 				1F1A58511B0A831C0016F53F /* MealPlanModel.swift in Sources */,
+				1F79CB2C1B13C06C004B6595 /* DiscoverColors.swift in Sources */,
 				1F1A58621B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift in Sources */,
 				1F3E35511B1041880057BC9F /* IngrediantButton.swift in Sources */,
 				1F1A585A1B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift in Sources */,
