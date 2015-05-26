@@ -1,5 +1,5 @@
 //
-//  FoodChoicesPresentationController.swift
+//  DiscoverPresentationController.swift
 //  Discover
 //
 //  Created by Michael Kinney on 5/18/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FoodChoicesPresentationController: UIPresentationController {
+class DiscoverPresentationController: UIPresentationController {
 	
 	override init(presentedViewController: UIViewController!, presentingViewController: UIViewController!) {
 		super.init(presentedViewController: presentedViewController, presentingViewController: presentingViewController)

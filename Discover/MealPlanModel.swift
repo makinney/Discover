@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum MealDescriptionIngrediantType {
+enum MealDescriptionIngredientType {
 	case Batch
 	case Sweet
 	case Spicy
@@ -17,31 +17,31 @@ enum MealDescriptionIngrediantType {
 	case Meal
 }
 
-struct MealDescriptionIngrediant {
-	var mealDescriptionIngrediantType: MealDescriptionIngrediantType
-	var choices: [String] {
+struct MealDescriptionIngredient {
+	var mealDescriptionIngredientType: MealDescriptionIngredientType
+	var ingredients: [String] {
 		get {
-			return MealPlanModel.ingrediants(mealDescriptionIngrediantType) // TODO: name and reverence back into class is kinda
+			return MealPlanModel.ingredients(mealDescriptionIngredientType) // TODO: name and reverence back into class is kinda
 		}
 	}
 }
 
 class MealPlanModel {
 
-	private static var ingrediantPresistence = [MealDescriptionIngrediantType:String]()
+	private static var ingredientPresistence = [MealDescriptionIngredientType:String]()
 
-	class func ingrediantDescription() -> [MealDescriptionIngrediantType:String] {
-			return ingrediantPresistence
+	class func ingredientDescription() -> [MealDescriptionIngredientType:String] {
+			return ingredientPresistence
 	}
 	
-	class func saveIngrediants(ingrediants: [MealDescriptionIngrediantType:String]) {
-		for (ingrediantType, ingrediant) in ingrediants {
-			ingrediantPresistence[ingrediantType] = ingrediant
+	class func saveIngredients(ingredients: [MealDescriptionIngredientType:String]) {
+		for (ingredientType, ingredient) in ingredients {
+			ingredientPresistence[ingredientType] = ingredient
 		}
 	}
 	
-	class func ingrediants(mealDescriptionIngrediantType: MealDescriptionIngrediantType) -> [String] {
-		switch (mealDescriptionIngrediantType) {
+	class func ingredients(mealDescriptionIngredientType: MealDescriptionIngredientType) -> [String] {
+		switch (mealDescriptionIngredientType) {
 		case .Batch:
 			return ["SMALL BATCH", "LARGE BATCH", "MASS MARKET", "ONE OF A KIND"]
 		case .Sweet:

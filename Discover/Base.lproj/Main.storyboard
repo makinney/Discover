@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="152" y="577"/>
         </scene>
-        <!--Meal Ingrediants View Controller-->
+        <!--Meal Ingredients View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MealIngrediantsViewController" customModule="Discover" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MealIngredientsViewController" customModule="Discover" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -150,7 +150,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCq-Ha-mdR" userLabel="ChoicesContainer">
                                 <rect key="frame" x="150" y="65" width="300" height="425"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gi-FR-Eyr" userLabel="ChoiceA" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gi-FR-Eyr" userLabel="ChoiceA" customClass="IngredientButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="6" y="4" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -164,60 +164,60 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="kNb-Ta-PRb"/>
-                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pv5-nP-oki"/>
+                                            <action selector="ingredientButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="kNb-Ta-PRb"/>
+                                            <action selector="ingredientButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pv5-nP-oki"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YC0-Vy-LSB" userLabel="ChoiceB" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YC0-Vy-LSB" userLabel="ChoiceB" customClass="IngredientButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="156" y="4" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="0Dd-8Q-u23"/>
-                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGR-Cx-tq3"/>
+                                            <action selector="ingredientButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="0Dd-8Q-u23"/>
+                                            <action selector="ingredientButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGR-Cx-tq3"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fus-8k-daX" userLabel="ChoiceC" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fus-8k-daX" userLabel="ChoiceC" customClass="IngredientButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="6" y="152" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="3" y="148" width="143" height="143"/>
                                         </variation>
                                         <connections>
-                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="8Rq-kV-ByT"/>
-                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOx-gU-HNZ"/>
+                                            <action selector="ingredientButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="8Rq-kV-ByT"/>
+                                            <action selector="ingredientButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOx-gU-HNZ"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbT-Zn-Dw7" userLabel="ChoiceD" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbT-Zn-Dw7" userLabel="ChoiceD" customClass="IngredientButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="156" y="152" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="154" y="152" width="143" height="143"/>
                                         </variation>
                                         <connections>
-                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="9Qf-hy-i1q"/>
-                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVS-ee-vJG"/>
+                                            <action selector="ingredientButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="9Qf-hy-i1q"/>
+                                            <action selector="ingredientButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVS-ee-vJG"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD4-5g-WNf" userLabel="ChoiceE" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD4-5g-WNf" userLabel="ChoiceE" customClass="IngredientButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="6" y="300" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="4" y="282" width="143" height="143"/>
                                         </variation>
                                         <connections>
-                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Wik-Kh-Jtf"/>
-                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAk-U5-Qiv"/>
+                                            <action selector="ingredientButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Wik-Kh-Jtf"/>
+                                            <action selector="ingredientButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAk-U5-Qiv"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxz-uU-4kG" userLabel="ChoiceF" customClass="IngrediantButton" customModule="Discover" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxz-uU-4kG" userLabel="ChoiceF" customClass="IngredientButton" customModule="Discover" customModuleProvider="target">
                                         <rect key="frame" x="156" y="300" width="138" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="136" y="299" width="143" height="143"/>
                                         </variation>
                                         <connections>
-                                            <action selector="ingrediantButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="uuC-pq-URf"/>
-                                            <action selector="ingrediantButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWn-fa-bwY"/>
+                                            <action selector="ingredientButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="uuC-pq-URf"/>
+                                            <action selector="ingredientButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWn-fa-bwY"/>
                                         </connections>
                                     </view>
                                 </subviews>
@@ -313,12 +313,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="PDw-w7-yb6"/>
                     <connections>
-                        <outlet property="ingrediantButtonA" destination="7gi-FR-Eyr" id="GI4-BR-v2J"/>
-                        <outlet property="ingrediantButtonB" destination="YC0-Vy-LSB" id="YFj-Qk-fFs"/>
-                        <outlet property="ingrediantButtonC" destination="fus-8k-daX" id="hIK-FS-ALd"/>
-                        <outlet property="ingrediantButtonD" destination="kbT-Zn-Dw7" id="jAi-Qp-xuw"/>
-                        <outlet property="ingrediantButtonE" destination="cD4-5g-WNf" id="D1j-aB-10T"/>
-                        <outlet property="ingrediantButtonF" destination="sxz-uU-4kG" id="a7e-d1-DXb"/>
+                        <outlet property="ingredientButtonA" destination="7gi-FR-Eyr" id="GI4-BR-v2J"/>
+                        <outlet property="ingredientButtonB" destination="YC0-Vy-LSB" id="YFj-Qk-fFs"/>
+                        <outlet property="ingredientButtonC" destination="fus-8k-daX" id="hIK-FS-ALd"/>
+                        <outlet property="ingredientButtonD" destination="kbT-Zn-Dw7" id="jAi-Qp-xuw"/>
+                        <outlet property="ingredientButtonE" destination="cD4-5g-WNf" id="D1j-aB-10T"/>
+                        <outlet property="ingredientButtonF" destination="sxz-uU-4kG" id="a7e-d1-DXb"/>
                         <outlet property="toolbar" destination="PUa-0L-wsM" id="uJn-Cl-yu4"/>
                     </connections>
                 </viewController>
@@ -416,7 +416,7 @@
                                     <constraint firstItem="M7U-xX-1yt" firstAttribute="height" secondItem="KWZ-ei-c5T" secondAttribute="height" id="z1F-yU-JoZ"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediants" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSj-Qj-4Fm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSj-Qj-4Fm">
                                 <rect key="frame" x="184" y="225" width="224" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>

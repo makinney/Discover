@@ -27,7 +27,7 @@ class YourChoicesViewController: UIViewController {
 	
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
-		var customersMealDescriptions = MealPlanModel.ingrediantDescription()
+		var customersMealDescriptions = MealPlanModel.ingredientDescription()
 		viewA.text = customersMealDescriptions[.Batch]
 		viewB.text = customersMealDescriptions[.Sweet]
 		viewC.text = customersMealDescriptions[.Texture]
@@ -47,7 +47,7 @@ class YourChoicesViewController: UIViewController {
 	
 	func prepLabel(label: UILabel) {
 		label.textColor = UIColor.discoverOrange()
-		label.backgroundColor = UIColor.ingrediantTextBackground()
+		label.backgroundColor = UIColor.ingredientTextBackground()
 		label.layer.borderColor = UIColor.grayColor().CGColor
 		label.layer.borderWidth = CGFloat(1.0)
 	}

@@ -1,5 +1,5 @@
 //
-//  FoodChoicesAnimatedTransistioningDelegate.swift
+//  DiscoverAnimatedTransistioningDelegate.swift
 //  Discover
 //
 //  Created by Michael Kinney on 5/18/15.
@@ -8,19 +8,19 @@
 
 import UIKit
 
-class FoodChoicesAnimatedTransistioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
+class DiscoverAnimatedTransistioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
 	func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
-		return FoodChoicesPresentationController(presentedViewController: presented, presentingViewController: presenting)
+		return DiscoverPresentationController(presentedViewController: presented, presentingViewController: presenting)
 	}
 	
 	func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-		let foodChoicesPresentAnimatedTransistion = FoodChoicesPresentAnimatedTransistion()
-		return foodChoicesPresentAnimatedTransistion
+		let discoverPresentAnimatedTransistion = DiscoverPresentAnimatedTransistion()
+		return discoverPresentAnimatedTransistion
 	}
 	
 	func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-		let foodChoicesDismissAnimatedTransistioning = FoodChoicesDismissAnimatedTransistioning()
-		return foodChoicesDismissAnimatedTransistioning
+		let discoverDismissAnimatedTransistioning = DiscoverDismissAnimatedTransistioning()
+		return discoverDismissAnimatedTransistioning
 	}
 
 }

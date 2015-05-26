@@ -9,7 +9,7 @@
 
 import UIKit
 
-typealias IngrediantArcAngle = (startRadians: CGFloat, endRadians: CGFloat, lengthRadians: CGFloat)
+typealias IngredientArcAngle = (startRadians: CGFloat, endRadians: CGFloat, lengthRadians: CGFloat)
 
 struct ArcModel {
 	let gapBetweenArcs: CGFloat = CGFloat(M_PI) / 16.0
@@ -54,7 +54,7 @@ struct ArcModel {
 		return path
 	}
 	
-	private func createArcPath(#arcCenter: CGPoint, arcRadius: CGFloat, arcAngle: IngrediantArcAngle) -> UIBezierPath {
+	private func createArcPath(#arcCenter: CGPoint, arcRadius: CGFloat, arcAngle: IngredientArcAngle) -> UIBezierPath {
 		var path = UIBezierPath(arcCenter: arcCenter,
 			radius: arcRadius,
 			startAngle: arcAngle.startRadians,
@@ -63,8 +63,8 @@ struct ArcModel {
 		return path
 	}
 	
-	private func firstArcAngle(numberOfArcs: Int) -> IngrediantArcAngle? {
-		var arcAngle: IngrediantArcAngle = (0.0, 0.0, 0.0)
+	private func firstArcAngle(numberOfArcs: Int) -> IngredientArcAngle? {
+		var arcAngle: IngredientArcAngle = (0.0, 0.0, 0.0)
 		let topOfCircle = 1.5 * π
 		if numberOfArcs > 0 {
 			arcAngle.startRadians = topOfCircle + (gapBetweenArcs / 2)
@@ -79,7 +79,7 @@ struct ArcModel {
 		}
 	}
 	
-	private func arcAngleFor(#arcIndex: Int, numberOfArcs: Int) -> IngrediantArcAngle? {
+	private func arcAngleFor(#arcIndex: Int, numberOfArcs: Int) -> IngredientArcAngle? {
 		if arcIndex < 0 || arcIndex >= numberOfArcs {
 			return nil
 		}

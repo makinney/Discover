@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		1F1A58511B0A831C0016F53F /* MealPlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58501B0A831C0016F53F /* MealPlanModel.swift */; };
 		1F1A58531B0ADDB80016F53F /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58521B0ADDB80016F53F /* EntryViewController.swift */; };
-		1F1A58581B0AE11B0016F53F /* FoodChoicesPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58571B0AE11B0016F53F /* FoodChoicesPresentationController.swift */; };
-		1F1A585A1B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58591B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift */; };
-		1F1A585C1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A585B1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift */; };
-		1F1A585E1B0AE3550016F53F /* FoodChoicesAnimatedTransistioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A585D1B0AE3550016F53F /* FoodChoicesAnimatedTransistioningDelegate.swift */; };
+		1F1A58581B0AE11B0016F53F /* DiscoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58571B0AE11B0016F53F /* DiscoverPresentationController.swift */; };
+		1F1A585A1B0AE23D0016F53F /* DiscoverPresentAnimatedTransistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58591B0AE23D0016F53F /* DiscoverPresentAnimatedTransistion.swift */; };
+		1F1A585C1B0AE2E10016F53F /* DiscoverDismissAnimatedTransistioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A585B1B0AE2E10016F53F /* DiscoverDismissAnimatedTransistioning.swift */; };
+		1F1A585E1B0AE3550016F53F /* DiscoverAnimatedTransistioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A585D1B0AE3550016F53F /* DiscoverAnimatedTransistioningDelegate.swift */; };
 		1F1A58601B0AE8900016F53F /* BlurredBackgroundPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A585F1B0AE8900016F53F /* BlurredBackgroundPresentationController.swift */; };
 		1F1A58621B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58611B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift */; };
 		1F1A58641B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58631B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift */; };
 		1F1A58661B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58651B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift */; };
 		1F1A58681B0AEB540016F53F /* YourChoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1A58671B0AEB540016F53F /* YourChoicesViewController.swift */; };
-		1F3E354F1B10408C0057BC9F /* IngrediantButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E354E1B10408C0057BC9F /* IngrediantButton.xib */; };
-		1F3E35511B1041880057BC9F /* IngrediantButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E35501B1041880057BC9F /* IngrediantButton.swift */; };
+		1F3E354F1B10408C0057BC9F /* IngredientButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E354E1B10408C0057BC9F /* IngredientButton.xib */; };
+		1F3E35511B1041880057BC9F /* IngredientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E35501B1041880057BC9F /* IngredientButton.swift */; };
 		1F3E35531B10FD260057BC9F /* ArcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E35521B10FD260057BC9F /* ArcModel.swift */; };
-		1F3E35551B1398880057BC9F /* IngrediantSelectionMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E35541B1398880057BC9F /* IngrediantSelectionMediator.swift */; };
+		1F3E35551B1398880057BC9F /* IngredientSelectionMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E35541B1398880057BC9F /* IngredientSelectionMediator.swift */; };
 		1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F861B07DAE9000D9911 /* AppDelegate.swift */; };
 		1F629F8C1B07DAE9000D9911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8A1B07DAE9000D9911 /* Main.storyboard */; };
 		1F629F8E1B07DAE9000D9911 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8D1B07DAE9000D9911 /* Images.xcassets */; };
 		1F629F911B07DAE9000D9911 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F629F8F1B07DAE9000D9911 /* LaunchScreen.xib */; };
 		1F629F9D1B07DAE9000D9911 /* DiscoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */; };
-		1F629FA71B0812D5000D9911 /* MealIngrediantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FA61B0812D5000D9911 /* MealIngrediantsViewController.swift */; };
+		1F629FA71B0812D5000D9911 /* MealIngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FA61B0812D5000D9911 /* MealIngredientsViewController.swift */; };
 		1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629FAA1B08301F000D9911 /* RoundButton.swift */; };
 		1F79CB2C1B13C06C004B6595 /* DiscoverColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79CB2B1B13C06C004B6595 /* DiscoverColors.swift */; };
 /* End PBXBuildFile section */
@@ -44,20 +44,20 @@
 
 /* Begin PBXFileReference section */
 		1F1A58501B0A831C0016F53F /* MealPlanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MealPlanModel.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		1F1A58521B0ADDB80016F53F /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
-		1F1A58571B0AE11B0016F53F /* FoodChoicesPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoicesPresentationController.swift; sourceTree = "<group>"; };
-		1F1A58591B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoicesPresentAnimatedTransistion.swift; sourceTree = "<group>"; };
-		1F1A585B1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoicesDismissAnimatedTransistioning.swift; sourceTree = "<group>"; };
-		1F1A585D1B0AE3550016F53F /* FoodChoicesAnimatedTransistioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoicesAnimatedTransistioningDelegate.swift; sourceTree = "<group>"; };
+		1F1A58521B0ADDB80016F53F /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = EntryViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1F1A58571B0AE11B0016F53F /* DiscoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DiscoverPresentationController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1F1A58591B0AE23D0016F53F /* DiscoverPresentAnimatedTransistion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DiscoverPresentAnimatedTransistion.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1F1A585B1B0AE2E10016F53F /* DiscoverDismissAnimatedTransistioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DiscoverDismissAnimatedTransistioning.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1F1A585D1B0AE3550016F53F /* DiscoverAnimatedTransistioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DiscoverAnimatedTransistioningDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1F1A585F1B0AE8900016F53F /* BlurredBackgroundPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredBackgroundPresentationController.swift; sourceTree = "<group>"; };
 		1F1A58611B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourChoicesPresentAnimatedTransistioning.swift; sourceTree = "<group>"; };
 		1F1A58631B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourChoicesDismissAnimatedTransistioning.swift; sourceTree = "<group>"; };
 		1F1A58651B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourChoicesAnimatedTransistioningDelegate.swift; sourceTree = "<group>"; };
 		1F1A58671B0AEB540016F53F /* YourChoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = YourChoicesViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		1F3E354E1B10408C0057BC9F /* IngrediantButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngrediantButton.xib; sourceTree = "<group>"; };
-		1F3E35501B1041880057BC9F /* IngrediantButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngrediantButton.swift; sourceTree = "<group>"; };
-		1F3E35521B10FD260057BC9F /* ArcModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcModel.swift; sourceTree = "<group>"; };
-		1F3E35541B1398880057BC9F /* IngrediantSelectionMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngrediantSelectionMediator.swift; sourceTree = "<group>"; };
+		1F3E354E1B10408C0057BC9F /* IngredientButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngredientButton.xib; sourceTree = "<group>"; };
+		1F3E35501B1041880057BC9F /* IngredientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = IngredientButton.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1F3E35521B10FD260057BC9F /* ArcModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ArcModel.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1F3E35541B1398880057BC9F /* IngredientSelectionMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = IngredientSelectionMediator.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1F629F811B07DAE9000D9911 /* Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F629F851B07DAE9000D9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F629F861B07DAE9000D9911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,9 +67,9 @@
 		1F629F961B07DAE9000D9911 /* DiscoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F629F9B1B07DAE9000D9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F629F9C1B07DAE9000D9911 /* DiscoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTests.swift; sourceTree = "<group>"; };
-		1F629FA61B0812D5000D9911 /* MealIngrediantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MealIngrediantsViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1F629FA61B0812D5000D9911 /* MealIngredientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MealIngredientsViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1F629FAA1B08301F000D9911 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		1F79CB2B1B13C06C004B6595 /* DiscoverColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverColors.swift; sourceTree = "<group>"; };
+		1F79CB2B1B13C06C004B6595 /* DiscoverColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DiscoverColors.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				1F1A585F1B0AE8900016F53F /* BlurredBackgroundPresentationController.swift */,
-				1F1A58571B0AE11B0016F53F /* FoodChoicesPresentationController.swift */,
-				1F1A585D1B0AE3550016F53F /* FoodChoicesAnimatedTransistioningDelegate.swift */,
-				1F1A58591B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift */,
-				1F1A585B1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift */,
+				1F1A58571B0AE11B0016F53F /* DiscoverPresentationController.swift */,
+				1F1A585D1B0AE3550016F53F /* DiscoverAnimatedTransistioningDelegate.swift */,
+				1F1A58591B0AE23D0016F53F /* DiscoverPresentAnimatedTransistion.swift */,
+				1F1A585B1B0AE2E10016F53F /* DiscoverDismissAnimatedTransistioning.swift */,
 				1F1A58611B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift */,
 				1F1A58631B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift */,
 				1F1A58651B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift */,
@@ -131,11 +131,11 @@
 				1F3E35521B10FD260057BC9F /* ArcModel.swift */,
 				1F79CB2B1B13C06C004B6595 /* DiscoverColors.swift */,
 				1F1A58521B0ADDB80016F53F /* EntryViewController.swift */,
-				1F3E354E1B10408C0057BC9F /* IngrediantButton.xib */,
-				1F3E35501B1041880057BC9F /* IngrediantButton.swift */,
-				1F3E35541B1398880057BC9F /* IngrediantSelectionMediator.swift */,
+				1F3E354E1B10408C0057BC9F /* IngredientButton.xib */,
+				1F3E35501B1041880057BC9F /* IngredientButton.swift */,
+				1F3E35541B1398880057BC9F /* IngredientSelectionMediator.swift */,
 				1F1A58501B0A831C0016F53F /* MealPlanModel.swift */,
-				1F629FA61B0812D5000D9911 /* MealIngrediantsViewController.swift */,
+				1F629FA61B0812D5000D9911 /* MealIngredientsViewController.swift */,
 				1F629FAA1B08301F000D9911 /* RoundButton.swift */,
 				1F1A58671B0AEB540016F53F /* YourChoicesViewController.swift */,
 				1F629F8D1B07DAE9000D9911 /* Images.xcassets */,
@@ -253,7 +253,7 @@
 			files = (
 				1F629F8C1B07DAE9000D9911 /* Main.storyboard in Resources */,
 				1F629F911B07DAE9000D9911 /* LaunchScreen.xib in Resources */,
-				1F3E354F1B10408C0057BC9F /* IngrediantButton.xib in Resources */,
+				1F3E354F1B10408C0057BC9F /* IngredientButton.xib in Resources */,
 				1F629F8E1B07DAE9000D9911 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,23 +272,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1A585C1B0AE2E10016F53F /* FoodChoicesDismissAnimatedTransistioning.swift in Sources */,
-				1F1A58581B0AE11B0016F53F /* FoodChoicesPresentationController.swift in Sources */,
+				1F1A585C1B0AE2E10016F53F /* DiscoverDismissAnimatedTransistioning.swift in Sources */,
+				1F1A58581B0AE11B0016F53F /* DiscoverPresentationController.swift in Sources */,
 				1F1A58531B0ADDB80016F53F /* EntryViewController.swift in Sources */,
-				1F3E35551B1398880057BC9F /* IngrediantSelectionMediator.swift in Sources */,
+				1F3E35551B1398880057BC9F /* IngredientSelectionMediator.swift in Sources */,
 				1F629FAB1B08301F000D9911 /* RoundButton.swift in Sources */,
 				1F1A58511B0A831C0016F53F /* MealPlanModel.swift in Sources */,
 				1F79CB2C1B13C06C004B6595 /* DiscoverColors.swift in Sources */,
 				1F1A58621B0AE9C20016F53F /* YourChoicesPresentAnimatedTransistioning.swift in Sources */,
-				1F3E35511B1041880057BC9F /* IngrediantButton.swift in Sources */,
-				1F1A585A1B0AE23D0016F53F /* FoodChoicesPresentAnimatedTransistion.swift in Sources */,
+				1F3E35511B1041880057BC9F /* IngredientButton.swift in Sources */,
+				1F1A585A1B0AE23D0016F53F /* DiscoverPresentAnimatedTransistion.swift in Sources */,
 				1F1A58601B0AE8900016F53F /* BlurredBackgroundPresentationController.swift in Sources */,
 				1F3E35531B10FD260057BC9F /* ArcModel.swift in Sources */,
 				1F1A58661B0AEA9D0016F53F /* YourChoicesAnimatedTransistioningDelegate.swift in Sources */,
 				1F1A58641B0AEA410016F53F /* YourChoicesDismissAnimatedTransistioning.swift in Sources */,
 				1F1A58681B0AEB540016F53F /* YourChoicesViewController.swift in Sources */,
-				1F1A585E1B0AE3550016F53F /* FoodChoicesAnimatedTransistioningDelegate.swift in Sources */,
-				1F629FA71B0812D5000D9911 /* MealIngrediantsViewController.swift in Sources */,
+				1F1A585E1B0AE3550016F53F /* DiscoverAnimatedTransistioningDelegate.swift in Sources */,
+				1F629FA71B0812D5000D9911 /* MealIngredientsViewController.swift in Sources */,
 				1F629F871B07DAE9000D9911 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

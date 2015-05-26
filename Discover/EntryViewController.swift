@@ -14,7 +14,7 @@ class EntryViewController: UIViewController {
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var emailLabel: UILabel!
 	
-	let foodChoicesAnimatedTransistioningDelegate = FoodChoicesAnimatedTransistioningDelegate()
+	let discoverAnimatedTransistioningDelegate = DiscoverAnimatedTransistioningDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ class EntryViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		var destinationViewController = segue.destinationViewController as! UIViewController
-		destinationViewController.transitioningDelegate = foodChoicesAnimatedTransistioningDelegate
+		destinationViewController.transitioningDelegate = discoverAnimatedTransistioningDelegate
 		destinationViewController.modalPresentationStyle = .Custom
     }
 

@@ -1,5 +1,5 @@
 //
-//  FoodChoicesDismissAnimatedTransistioning.swift
+//  DiscoverDismissAnimatedTransistioning.swift
 //  Discover
 //
 //  Created by Michael Kinney on 5/18/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FoodChoicesDismissAnimatedTransistioning: NSObject, UIViewControllerAnimatedTransitioning {
+class DiscoverDismissAnimatedTransistioning: NSObject, UIViewControllerAnimatedTransitioning {
 
 	func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
 		return 0.50 // TODO:

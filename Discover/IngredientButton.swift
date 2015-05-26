@@ -1,5 +1,5 @@
 //
-//  IngrediantButton.swift
+//  IngredientButton.swift
 //  Discover
 //
 //  Created by Michael Kinney on 5/22/15.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class IngrediantButton: UIButton {
+class IngredientButton: UIButton {
 
 	var defaultArcColor = UIColor.blackColor()
-	var fillColor = UIColor.ingrediantTextBackground()
+	var fillColor = UIColor.ingredientTextBackground()
 	var numberOfArcs = 1
 	var selectedArcColor = UIColor.blackColor()
 	var selectedArcIndex: Int?

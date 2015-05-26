@@ -14,7 +14,7 @@ extension UIColor {
 		return UIColor(red: 244.0 / 255.0, green: 91.0 / 255.0, blue: 97.0 / 255.0, alpha: 1.0)
 	}
 	
-	class func ingrediantTextBackground() -> UIColor {
+	class func ingredientTextBackground() -> UIColor {
 		return UIColor.blackColor().colorWithAlphaComponent(0.5)
 	}
 }

@@ -1,5 +1,5 @@
 //
-//  FoodChoicesAnimatedTransistion.swift
+//  DiscoverAnimatedTransistion.swift
 //  Discover
 //
 //  Created by Michael Kinney on 5/18/15.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class FoodChoicesPresentAnimatedTransistion: NSObject, UIViewControllerAnimatedTransitioning {
+class DiscoverPresentAnimatedTransistion: NSObject, UIViewControllerAnimatedTransitioning {
 
 	func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-		return 0.50 // TODO:
+		return 1.00 // TODO:
 	}
 	
 	func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -25,14 +25,14 @@ class FoodChoicesPresentAnimatedTransistion: NSObject, UIViewControllerAnimatedT
 		
 		var presentedTransform = CGAffineTransformIdentity
 		
-		var scale = CGAffineTransformMakeScale(0.05,0.05)
+		var scale = CGAffineTransformMakeScale(0.001,0.001)
 		var xlat = CGAffineTransformMakeTranslation(0, 200)
 		var dismissedTransform =  CGAffineTransformConcat(scale, xlat)
 		
 		animatingView.transform = dismissedTransform
 		
 		UIView.animateWithDuration(transitionDuration(transitionContext),
-			delay: 0,
+			delay: 0.00,
 			options: UIViewAnimationOptions.CurveEaseIn,
 			animations: { () -> Void in
 				animatingView.transform = presentedTransform
